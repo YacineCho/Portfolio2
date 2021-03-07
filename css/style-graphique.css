@@ -1,0 +1,218 @@
+/*Style graphique général*/
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*page d'accueil*/
+body{
+    background-color: #26001B;
+}
+
+#header>.container{
+    display: grid;
+    grid-template-columns: 75% 5% 2% 5% 2% 7%;
+    padding-top: 1rem;
+}
+
+#header>.container a{
+    text-decoration: none;
+}
+
+#accueil > .container {
+    display: grid;
+    grid-template-rows: 5rem 7rem 5rem 5rem 8rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+#accueil>.container div:last-of-type img{
+    height: 4rem;
+}
+
+.fonction {
+    border: solid white 0.1rem;
+    border-radius: 4px;
+    width: 6.5rem;
+    padding: 0.3rem;
+}
+
+#projets > .container {
+    grid-template-columns: 100px auto 100px;
+    display: grid;
+    grid-template-rows: 2px 100px 25px 360px 25px 360px 25px 360px 25px 360px;
+}
+
+#projets >.container div:first-of-type + div{
+    grid-column-start: 2;
+}
+
+#projets > .container > div:first-of-type {
+    background-color: #FF005C;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: 3;
+}
+
+#indiglu {
+    background-image: url("../img/ProjetIndiglu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+
+#campuscar{
+    background-image: url("../img/ProjetCampusCar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+#quentintarantino{
+    background-image: url("../img/ProjetQuentinTarantino.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 8;
+}
+
+#ideas4look{
+    background-image: url("../img/ProjetIdeas4Look.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end: 10;
+}
+
+#indiglu > .container, #campuscar > .container, #ideas4look > .container, #quentintarantino > .container {
+    display: grid;
+    grid-template-columns: 50px 400px auto;
+    grid-template-rows: 100px 10px 32px 10px 170px;
+}
+
+.titreProjet{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.fonction{
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.descriptionProjet{
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+
+#projets>.container h3{
+    padding: 0;
+    margin: 0;
+}
+
+footer > .container {
+    grid-template-columns: 100px auto 64px 64px 64px 64px 100px;
+    display: grid;
+    grid-template-rows: 25px 2px 25px 50px 50px 25px 100px;
+}
+
+footer > .container > div:first-of-type + div {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    color: #FF005C;
+}
+
+footer > .container > div:first-of-type {
+    background-color: #FF005C;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+}
+
+footer > .container > div:nth-of-type(3) {
+    grid-row-start: 5;
+    grid-column-start: 2;
+}
+
+footer>.container> div:nth-of-type(4) img, footer>.container> div:nth-of-type(5) img, footer>.container> div:nth-of-type(6) img, footer>.container> div:nth-of-type(7) img, footer>.container> div:nth-of-type(8) img, footer>.container> div:nth-of-type(9) img{
+    height: 3rem;
+}
+
+footer>.container> div:nth-of-type(5){
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+footer>.container> div:nth-of-type(6){
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+footer>.container> div:nth-of-type(7){
+    grid-column-start: 5;
+    grid-row-start: 4;
+}
+
+footer>.container> div:nth-of-type(8){
+    grid-column-start: 6;
+    grid-row-start: 4;
+}
+
+footer>.container> div:nth-of-type(9){
+    text-align: center;
+    grid-row-start: 6;
+    grid-column-start: 2;
+}
+
+#accueil>.container>div{
+    text-align: center;
+    white-space: nowrap;
+}
+
+#accueil>.container>.titrePortfolio{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    color: #26001B;
+    -webkit-text-stroke: 2px #FFF711;
+}
+
+#accueil>.container>.titrePortfolio{
+    color: #FFF711;
+    transition: color 1s ease-in;
+}
+
+#accueil>.container>.titrePortfolio p{
+    white-space: nowrap;
+    animation: animate 300s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}

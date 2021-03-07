@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140">
+  <g id="Descendre" transform="translate(-890 -808)">
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(890 808)" fill="none" stroke="#fff711" stroke-width="5">
+      <circle cx="70" cy="70" r="70" stroke="none"/>
+      <circle cx="70" cy="70" r="67.5" fill="none"/>
+    </g>
+    <g id="arrow-down-sign-to-navigate" transform="translate(929.858 760.747)">
+      <path id="Tracé_17" data-name="Tracé 17" d="M30.142,137.365a3.922,3.922,0,0,1-2.984-1.447L1.237,105.576a5.555,5.555,0,0,1,0-6.989,3.8,3.8,0,0,1,5.97,0l22.935,26.848L53.077,98.588a3.8,3.8,0,0,1,5.969,0,5.553,5.553,0,0,1,0,6.989l-25.92,30.342A3.921,3.921,0,0,1,30.142,137.365Z" transform="translate(0)" fill="#fff711"/>
+    </g>
+  </g>
+</svg>
