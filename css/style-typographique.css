@@ -64,3 +64,49 @@ footer>.container> div:first-of-type + div{
     color: #26001B;
     -webkit-text-stroke: 0.5px #FFF711;
 }
+
+#mainIndiglu>.container div:first-of-type{
+    font-family: Eczar, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #493323;
+}
+
+#mainIndiglu > .container div:first-of-type + div {
+    font-family: Open, sans-serif;
+    font-size: 1.5rem;
+    color: #493323;
+}
+
+#indigluBody > .presentationProjet > .container div:nth-of-type(2), #indigluBody > .presentationProjet > .container div:nth-of-type(4),#indigluBody > .presentationProjet > .container div:nth-of-type(10),  #indigluBody > .presentationProjet > .container div:nth-of-type(14){
+    font-family: Eczar, sans-serif;
+    color: #493323;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.titreIndiglu{
+    font-family: Eczar, sans-serif;
+    color: #493323;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.desc{
+    font-family: Open, sans-serif;
+    color: #493323;
+    font-size: 1rem;
+}
+
+#indigluBody > .presentationProjet > .container div:nth-of-type(3), #indigluBody > .presentationProjet > .container div:nth-of-type(5),#indigluBody > .presentationProjet > .container div:nth-of-type(8), #indigluBody > .presentationProjet > .container div:nth-of-type(11), #indigluBody > .presentationProjet > .container div:nth-of-type(13), #indigluBody > .presentationProjet > .container div:nth-of-type(15){
+    font-family: Open, sans-serif;
+    color: #493323;
+    font-size: 1rem;
+}
+
+#indigluBody > .presentationProjet > .container div:nth-of-type(12){
+    font-family: Eczar, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
