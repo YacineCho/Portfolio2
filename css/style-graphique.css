@@ -69,7 +69,7 @@ html, body{
 
 
 #campuscar{
-    background-image: url("../img/ProjetCampusCar.jpg");
+    background-image: url("../img/ProjetCampusCar3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 4px;
@@ -196,23 +196,35 @@ footer > .container > div:nth-of-type(5) svg {
     z-index: 3;
 }
 
+#indigluBody>#header>.navbar {
+    overflow: hidden;
+    background-color: #E9B17E;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+#indigluBody>#header>.navbar a:hover {
+    border: solid 0.1rem #493323;
+}
+
 .navbar a {
     font-family: Open, sans-serif;
     border-radius: 5px;
     padding: 1rem 1rem 0 1rem;
     margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .navbar a:hover {
 
-    background-color: red;
+    border: solid 0.1rem #FFF711;
 
 }
 
 
-.navbar div:first-of-type{
-    padding: 1rem 1rem 0 0;
-}
 
 .navbar div > a {
     float: right;
@@ -805,9 +817,23 @@ animation: animationDescend 1s ease-in-out infinite;
     padding: 0.5rem;
     border-radius: 5px;
     border: none;
+    color: white;
 }
 
+#indigluBody>footer > .container > div:first-of-type {
+    background-color: rgba(112,112,112,29%);
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 2;
+}
 
+#indigluBody>footer > .container > div:first-of-type + div {
+    font-family: Eczar, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 0.5px #493323;
+}
 
 #projets>.container> #indiglu:hover{
     transform: scale(1.05,1.05);
