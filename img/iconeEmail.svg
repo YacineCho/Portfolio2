@@ -1,56 +1,24 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<polygon points="339.392,258.624 512,367.744 512,144.896 		"/>
-	</g>
-</g>
-<g>
-	<g>
-		<polygon points="0,144.896 0,367.744 172.608,258.624 		"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
-			L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="72.727" height="50" viewBox="0 0 72.727 50">
+  <g id="email" transform="translate(0 -80)">
+    <g id="Groupe_30" data-name="Groupe 30" transform="translate(48.474 89.39)">
+      <g id="Groupe_29" data-name="Groupe 29">
+        <path id="Tracé_18" data-name="Tracé 18" d="M339.392,160.876l24.254,15.333V144.9Z" transform="translate(-339.392 -144.896)" fill="#ff005c"/>
+      </g>
+    </g>
+    <g id="Groupe_32" data-name="Groupe 32" transform="translate(0 89.39)">
+      <g id="Groupe_31" data-name="Groupe 31">
+        <path id="Tracé_19" data-name="Tracé 19" d="M0,144.9v31.313l24.254-15.333Z" transform="translate(0 -144.896)" fill="#ff005c"/>
+      </g>
+    </g>
+    <g id="Groupe_34" data-name="Groupe 34" transform="translate(0.135 80)">
+      <g id="Groupe_33" data-name="Groupe 33">
+        <path id="Tracé_20" data-name="Tracé 20" d="M69.008,80H5.369A4.473,4.473,0,0,0,.96,83.826l36.229,23.611L73.418,83.826A4.473,4.473,0,0,0,69.008,80Z" transform="translate(-0.96 -80)" fill="#ff005c"/>
+      </g>
+    </g>
+    <g id="Groupe_36" data-name="Groupe 36" transform="translate(0.144 108.35)">
+      <g id="Groupe_35" data-name="Groupe 35">
+        <path id="Tracé_21" data-name="Tracé 21" d="M44.926,277.925l-6.432,4.191a2.3,2.3,0,0,1-2.5,0l-6.432-4.2L1.024,295.775a4.466,4.466,0,0,0,4.4,3.795H69.063a4.466,4.466,0,0,0,4.4-3.795Z" transform="translate(-1.024 -277.92)" fill="#ff005c"/>
+      </g>
+    </g>
+  </g>
 </svg>
