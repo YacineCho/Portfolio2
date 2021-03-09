@@ -39,6 +39,15 @@ html, body{
     padding: 0.3rem;
 }
 
+#campuscarBody>#header>.navbar>.case a:hover{
+    border: solid 0.1rem #FECB49;
+}
+
+#ideas4lookBody>#header>.navbar>.case a:hover{
+    border: solid 0.1rem #F4C943;
+}
+
+
 #ideas4look>a>.container>.fonction {
     border: solid white 0.1rem;
     border-radius: 4px;
