@@ -196,18 +196,105 @@ footer > .container > div:nth-of-type(5) svg {
     z-index: 3;
 }
 
-#indigluBody>#header>.navbar {
+#indigluBody > #header > .navbar {
     overflow: hidden;
-    background-color: #E9B17E;
+    background: linear-gradient(#E9B17E, rgba(255,255,255,0));
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 3;
 }
 
+#indigluBody>#header>.navbar div > a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    margin-bottom: 5rem;
+}
+
 #indigluBody>#header>.navbar a:hover {
     border: solid 0.1rem #493323;
 }
+
+.accueilBody > #header > .navbar {
+    overflow: hidden;
+    background: linear-gradient(#26001B, rgba(255,255,255,0));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.accueilBody>#header>.navbar div > a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    margin-bottom: 5rem;
+}
+
+#campuscarBody > #header > .navbar {
+    overflow: hidden;
+    background: linear-gradient(#055C8C, rgba(255,255,255,0));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+#campuscarBody >#header>.navbar div > a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    margin-bottom: 5rem;
+}
+
+#QTBody > #header > .navbar {
+    overflow: hidden;
+    background: linear-gradient(#F8EB13, rgba(255,255,255,0));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+#QTBody >#header>.navbar div > a {
+    float: right;
+    display: block;
+    color: #black;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    margin-bottom: 5rem;
+}
+
+#ideas4lookBody > #header > .navbar {
+    overflow: hidden;
+    background: linear-gradient(#EB94A6, rgba(255,255,255,0));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+#ideas4lookBody >#header>.navbar div > a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    margin-bottom: 5rem;
+}
+
 
 .navbar a {
     font-family: Open, sans-serif;
@@ -234,6 +321,8 @@ footer > .container > div:nth-of-type(5) svg {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+
 
 .navbar> div:hover {
     background: #ddd;
@@ -1270,6 +1359,29 @@ animation: animationDescend 1s ease-in-out infinite;
     width: 100%;
 }
 
+#ideas4lookBody>.lienProto > .container div:nth-of-type(3) button {
+    background-color: #E85E7A;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+#ideas4lookBody>.voirAutresProjets > .container div:nth-of-type(3) button {
+    background-color: #E85E7A;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#ideas4lookBody>footer > .container > div:first-of-type + div {
+    font-family: Eczar, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 0.5px #E85E7A;
+}
+
 /*Quentin Tarantino*/
 #QTBody {
     background-color: BLACK;
@@ -1346,7 +1458,7 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #QTBody > .presentationProjet > .container div:first-of-type {
-    background: rgba(112,112,112,29%);
+    background: rgba(255,246,0,29%);
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 22;
@@ -1377,7 +1489,7 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #QTBody > .presentationProjet > .container div:nth-of-type(6) {
-    background: rgba(112,112,112,29%);
+    background: rgba(255,246,0,29%);
     grid-column-start: 13;
     grid-column-end: 22;
     grid-row-start: 8;
@@ -1402,7 +1514,7 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #QTBody > .presentationProjet > .container div:nth-of-type(9) {
-    background: rgba(112,112,112,29%);
+    background: rgba(255,246,0,29%);
     grid-column-start: 13;
     grid-column-end: 22;
     grid-row-start: 12;
@@ -1431,10 +1543,9 @@ animation: animationDescend 1s ease-in-out infinite;
     grid-column-end: 7;
     text-align: center;
     grid-row-start: 1;
-    background-color: #E9B17E;
+    background-color: #F8EB13;
     grid-row-end: 6;
 }
-
 #QTBody > .presentationSujet > .container div:nth-of-type(2) {
     grid-column-start: 3;
     grid-column-end: 5;
@@ -1476,7 +1587,7 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #QTBody > .choixVisuel > .container div:first-of-type {
-    background: rgba(112,112,112,29%);
+    background: rgba(255,246,0,29%);
     grid-row-start: 1;
     grid-column-start: 2;
     grid-column-end: 11;
@@ -1604,7 +1715,7 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #QTBody > .choixLogo > .container div:first-of-type {
-    background: rgba(112,112,112,29%);
+    background: rgba(255,246,0,29%);
     grid-row-start: 1;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -1640,10 +1751,46 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #QTBody > .maquette > .container div:first-of-type {
-    background: rgba(112,112,112,29%);
+    background: rgba(255,246,0,29%);
     grid-row-start: 1;
     grid-column-start: 2;
     grid-column-end: 4;
+}
+
+#QTBody >.lienProto > .container div:first-of-type {
+    background: rgba(255,246,0,29%);
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+#QTBody > .voirAutresProjets > .container div:first-of-type {
+    background: rgba(255,246,0,29%);
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+#QTBody>footer > .container > div:first-of-type {
+    background: rgba(255,246,0,29%);
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 2;
+}
+
+#QTBody> .voirAutresProjets > .container div:nth-of-type(3) button {
+    background-color: #F8EB13;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#QTBody>.lienProto > .container div:nth-of-type(3) button {
+    background-color: #F8EB13;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
 }
 
 #QTBody > .maquette > .container div:nth-of-type(2) {
@@ -1751,6 +1898,27 @@ animation: animationDescend 1s ease-in-out infinite;
     display: grid;
     grid-template-columns: 8% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 8%;
     grid-template-rows: 25px 2px 25px 20px 10px 20px 10px 2px 10px 20px 10px 2px 10px 20px 10px 20px 25px;
+}
+
+#campuscarBody> footer > .container > div:first-of-type {
+    background-color: #FDCB48;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 2;
+}
+
+#campuscarBody> footer path{
+    fill: #FDCB48;
+}
+
+#campuscarBody > #header > .navbar div > a:hover {
+    border-color: #FDCB48;
+}
+
+#campuscarBody>footer svg{
+    fill: #FDCB48;
+    width: 100%;
+    height: 100%;
 }
 
 #campuscarBody > .presentationProjet > .container div:first-of-type {
@@ -2110,8 +2278,7 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #campuscarBody > .choixVisuel > .container div:nth-of-type(5) {
-    background: #FCFBF5;
-    border: solid #493323 0.1rem;
+    background: #055C8C;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 5;
@@ -2129,7 +2296,7 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #campuscarBody > .choixVisuel > .container div:nth-of-type(8) {
-    background: #493323;
+    background: #FECB49;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 9;
@@ -2147,7 +2314,7 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #campuscarBody > .choixVisuel > .container div:nth-of-type(11) {
-    background: #EAAC7F;
+    background: #A2D5F2;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 13;
@@ -2245,7 +2412,7 @@ animation: animationDescend 1s ease-in-out infinite;
 #campuscarBody > .maquette > .container {
     display: grid;
     grid-template-columns: 100px 50px auto 100px;
-    grid-template-rows: 2px 10px 25px 10px 25px 10px 100px 25px auto 25px;
+    grid-template-rows: 2px 10px 25px 10px 25px 10px 25px auto 25px 25px;
 }
 
 #campuscarBody > .maquette > .container div:first-of-type {

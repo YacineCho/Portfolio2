@@ -69,12 +69,22 @@ footer>.container> div:first-of-type + div{
     -webkit-text-stroke: 0.5px #FFF711;
 }
 
+#campuscarBody>footer > .container > div:first-of-type + div {
+    font-family: Eczar, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 0.5px #055C8C;
+}
+
 #mainIndiglu > .container div:first-of-type {
     font-family: Eczar, sans-serif;
     font-weight: bold;
     font-size: 5rem;
-    color: #493323;
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 0.1rem #493323;
 }
+
 
 #mainIndiglu > .container div:first-of-type + div {
     font-family: Open, sans-serif;
@@ -125,6 +135,26 @@ footer>.container> div:first-of-type + div{
     color: #055C8C;
     font-size: 1rem;
     font-weight: bold;
+}
+
+#campuscarBody>.lienProto>.container button{
+    font-family: Open, sans-serif;
+    color: #055C8C;
+    font-size: 0.8rem;
+    background-color: #FDCB48;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+#campuscarBody>.voirAutresProjets>.container button{
+    font-family: Open, sans-serif;
+    color: #055C8C;
+    font-size: 0.8rem;
+    background-color: #FDCB48;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
 }
 
 .presentationSujet>.container>.titreCampuscar{
@@ -179,7 +209,8 @@ footer > .container > div:nth-of-type(3) a {
     font-family: Eczar, sans-serif;
     font-weight: bold;
     font-size: 5rem;
-    color: #493323;
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 0.1rem white;
 }
 
 #mainIdeas4look > .container div:first-of-type + div {
@@ -206,25 +237,77 @@ footer > .container > div:nth-of-type(3) a {
     font-family: Eczar, sans-serif;
     font-weight: bold;
     font-size: 5rem;
-    color: black;
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 0.1rem black;
 }
 
 #mainQT > .container div:first-of-type + div {
     font-family: Open, sans-serif;
     font-size: 1.5rem;
-    color: #493323;
+    color: black;
 }
 
-#QTBody > .presentationProjet > .container div:nth-of-type(2), #ideas4lookBody > .presentationProjet > .container div:nth-of-type(4), #ideas4lookBody > .presentationProjet > .container div:nth-of-type(10), #ideas4lookBody > .presentationProjet > .container div:nth-of-type(14) {
+#QTBody>#header>div{
+    overflow: hidden;
+    background-color: #F8EB13;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+#QTBody>#header>div a{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#QTBody>#header>div a:hover{
+    border: solid black 0.1rem;
+}
+
+.titreQT {
     font-family: Eczar, sans-serif;
-    color: #493323;
+    color: black;
     font-size: 1rem;
     font-weight: bold;
 }
 
-#QTBody > .presentationProjet > .container div:nth-of-type(3), #ideas4lookBody > .presentationProjet > .container div:nth-of-type(5), #ideas4lookBody > .presentationProjet > .container div:nth-of-type(8), #ideas4lookBody > .presentationProjet > .container div:nth-of-type(11), #ideas4lookBody > .presentationProjet > .container div:nth-of-type(13), #ideas4lookBody > .presentationProjet > .container div:nth-of-type(15) {
+#QTBody .desc{
     font-family: Open, sans-serif;
-    color: #493323;
+    color: white;
+    font-size: 1rem;
+}
+
+#QTBody>.presentationSujet>.container> .desc{
+    font-family: Open, sans-serif;
+    color: black;
+    font-size: 1rem;
+}
+
+#QTBody > .presentationRecherches > .container div:first-of-type,#QTBody > .maquette > .container > .titreQT, #QTBody > .choixVisuel > .container > .titreQT, #QTBody > .choixLogo > .container > .titreQT, #QTBody > .voirAutresProjets > .container > .titreQT,#QTBody > .lienProto > .container > .titreQT{
+    color: #F8EB13;
+}
+
+#QTBody>.lienProto > .container div:nth-of-type(3) button, #QTBody>.voirAutresProjets>.container div:nth-of-type(3) button{
+    font-family: Open, sans-serif;
+    color: black;
+    font-size: 0.8rem;
+}
+
+#QTBody > .presentationProjet > .container div:nth-of-type(2), #QTBody > .presentationProjet > .container div:nth-of-type(4), #QTBody > .presentationProjet > .container div:nth-of-type(10), #QTBody > .presentationProjet > .container div:nth-of-type(14) {
+    font-family: Eczar, sans-serif;
+    color: #F8EB13;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#QTBody > .presentationProjet > .container div:nth-of-type(3), #QTBody > .presentationProjet > .container div:nth-of-type(5), #QTBody > .presentationProjet > .container div:nth-of-type(8), #QTBody > .presentationProjet > .container div:nth-of-type(11), #QTBody > .presentationProjet > .container div:nth-of-type(13), #QTBody > .presentationProjet > .container div:nth-of-type(15) {
+    font-family: Open, sans-serif;
+    color: white;
     font-size: 1rem;
 }
 
@@ -233,7 +316,8 @@ footer > .container > div:nth-of-type(3) a {
     font-family: Eczar, sans-serif;
     font-weight: bold;
     font-size: 5rem;
-    color: #FDCB48;
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 0.1rem #FDCB48;
 }
 
 #mainCampuscar > .container div:first-of-type + div {
@@ -244,7 +328,6 @@ footer > .container > div:nth-of-type(3) a {
 
 #campuscarBody > .presentationProjet > .container div:nth-of-type(2), #campuscarBody > .presentationProjet > .container div:nth-of-type(4), #campuscarBody > .presentationProjet > .container div:nth-of-type(10), #campuscarBody > .presentationProjet > .container div:nth-of-type(14) {
     font-family: Eczar, sans-serif;
-    color: #493323;
     font-size: 1rem;
     font-weight: bold;
 }
