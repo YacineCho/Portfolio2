@@ -35,7 +35,14 @@ html, body{
 .fonction {
     border: solid white 0.1rem;
     border-radius: 4px;
-    width: 6.5rem;
+    width: 5.5rem;
+    padding: 0.3rem;
+}
+
+#ideas4look>a>.container>.fonction {
+    border: solid white 0.1rem;
+    border-radius: 4px;
+    width: 14rem;
     padding: 0.3rem;
 }
 
@@ -2257,7 +2264,7 @@ fill: #FFF711;
 #campuscarBody > .presentationUserflow > .container {
     display: grid;
     grid-template-columns: 8% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 8%;
-    grid-template-rows: 2px 25px 20px 10px 150px 200px;
+    grid-template-rows: 2px 25px 20px 10px 200px 200px;
 }
 
 #campuscarBody > .presentationUserflow > .container >div:first-of-type {
