@@ -924,6 +924,12 @@ animation: animationDescend 1s ease-in-out infinite;
     -webkit-text-stroke: 0.5px #493323;
 }
 
+#indigluBody>footer>.container>div:last-of-type svg{
+
+    height: 100%;
+
+}
+
 #projets>.container> #indiglu:hover{
     transform: scale(1.05,1.05);
     transition: transform 200ms ease-in-out;
@@ -1438,6 +1444,18 @@ animation: animationDescend 1s ease-in-out infinite;
     grid-row-end: 6;
 }
 
+#QTBody>footer>.container>div:nth-of-type(3)>a>svg>g path, #QTBody>footer>.container>div:nth-of-type(4)>svg path, #QTBody>footer>.container>div:nth-of-type(5)>svg path{
+    fill: #F8EB13;
+}
+
+#indigluBody>footer>.container>div:nth-of-type(3)>a>svg>g path, #indigluBody>footer>.container>div:nth-of-type(4)>svg path, #indigluBody>footer>.container>div:nth-of-type(5)>svg path,#indigluBody>footer>.container>div:last-of-type>a>svg>g path{
+    fill: #493323;
+}
+
+#indigluBody>footer>.container>div:last-of-type>a>svg>g circle{
+    stroke: #493323;
+ }
+
 #QTBody > #mainIndiglu > .container {
     text-align: center;
 }
@@ -1585,6 +1603,10 @@ animation: animationDescend 1s ease-in-out infinite;
     display: grid;
     grid-template-columns: 100px 300px 50px 50px 5px auto 50px 50px 5px 300px 100px;
     grid-template-rows: 2px 10px 25px 25px 22.5px 5px 22.5px 5px 22.5px 5px 22.5px 5px 22.5px 5px 22.5px 25px;
+}
+
+#QTBody> .choixLogo >.container div img{
+    width: 15%;
 }
 
 #QTBody > .choixVisuel > .container div:first-of-type {
@@ -1921,6 +1943,26 @@ fill: #FFF711;
 
 #campuscarBody> footer path{
     fill: #FDCB48;
+}
+
+#campuscarBody> footer circle{
+    stroke: #FDCB48;
+}
+
+#ideas4lookBody> footer path{
+    fill: #E85E7A;
+}
+
+#ideas4lookBody> footer circle{
+    stroke: #E85E7A;
+}
+
+#ideas4lookBody> footer circle{
+    stroke: #E85E7A;
+}
+
+#ideas4lookBody>footer div:last-of-type svg{
+    height: 100%;
 }
 
 #campuscarBody > #header > .navbar div > a:hover {
@@ -2370,7 +2412,7 @@ fill: #FFF711;
 }
 
 #campuscarBody > .choixVisuel > .container div:nth-of-type(15) {
-    background: #493323;
+    background: #055C8C;
     grid-column-start: 8;
     grid-row-start: 5;
     grid-row-end: 8;
@@ -2388,7 +2430,7 @@ fill: #FFF711;
 }
 
 #campuscarBody > .choixVisuel > .container div:nth-of-type(18) {
-    background: #493323;
+    background: #055C8C;
     grid-column-start: 8;
     grid-row-start: 9;
     grid-row-end: 12;
