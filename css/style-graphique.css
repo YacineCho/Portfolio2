@@ -1357,6 +1357,7 @@ animation: animationDescend 1s ease-in-out infinite;
 
 #ideas4lookBody > .maquette > .container div:nth-of-type(5) img {
     width: 100%;
+    border: 0.2rem solid black;
 }
 
 #ideas4lookBody>.lienProto > .container div:nth-of-type(3) button {
@@ -1612,8 +1613,8 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #QTBody > .choixVisuel > .container div:nth-of-type(5) {
-    background: #FCFBF5;
-    border: solid #493323 0.1rem;
+    background: #000000;
+    border: solid #F8EB13 0.1rem;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 5;
@@ -1631,7 +1632,7 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #QTBody > .choixVisuel > .container div:nth-of-type(8) {
-    background: #493323;
+    background: #F8EB13;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 9;
@@ -1649,7 +1650,7 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #QTBody > .choixVisuel > .container div:nth-of-type(11) {
-    background: #EAAC7F;
+    background: #FFFFFF;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 13;
@@ -1673,11 +1674,11 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #QTBody > .choixVisuel > .container div:nth-of-type(15) {
-    background: #493323;
+    background: #F8EB13;
     grid-column-start: 8;
     grid-row-start: 5;
     grid-row-end: 8;
-    color: white;
+    color: black;
 }
 
 #QTBody > .choixVisuel > .container div:nth-of-type(16) {
@@ -1691,11 +1692,11 @@ animation: animationDescend 1s ease-in-out infinite;
 }
 
 #QTBody > .choixVisuel > .container div:nth-of-type(18) {
-    background: #493323;
+    background: #F8EB13;
     grid-column-start: 8;
     grid-row-start: 9;
     grid-row-end: 12;
-    color: white;
+    color: black;
 }
 
 #QTBody > .choixVisuel > .container div:nth-of-type(19) {
@@ -1823,6 +1824,17 @@ animation: animationDescend 1s ease-in-out infinite;
 #QTBody > .maquette > .container div:nth-of-type(5) img {
     width: 100%;
     border: solid yellow 0.2rem;
+}
+
+#QTBody>.presentationProjet>.container svg{
+
+    height: 100%;
+    width: 100%;
+
+}
+
+#QTBody>.presentationProjet>.container svg g path{
+fill: #FFF711;
 }
 
 /*Campus Car*/
@@ -2016,6 +2028,26 @@ animation: animationDescend 1s ease-in-out infinite;
     grid-column-end: 5;
     text-align: center;
     grid-row-start: 2;
+}
+
+#campuscarBody>.presentationProjet>.container div svg{
+    height: 100%;
+    width: 100%;
+}
+
+
+#campuscarBody>.presentationProjet>.container div svg g path{
+    fill: #055C8C;
+}
+
+#ideas4lookBody>.presentationProjet>.container div svg{
+    height: 100%;
+    width: 100%;
+}
+
+
+#ideas4lookBody>.presentationProjet>.container div svg g path{
+    fill: #E85E7A;
 }
 
 #campuscarBody > .presentationSujet > .container div:last-of-type {

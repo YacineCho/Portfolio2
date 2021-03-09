@@ -269,6 +269,20 @@ footer > .container > div:nth-of-type(3) a {
     border: solid black 0.1rem;
 }
 
+#QTBody>.choixVisuel>.container> .police1 {
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    color: #F8EB13;
+    font-size: 1rem;
+}
+
+#QTBody>.choixVisuel>.container> .police2 {
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    color: #F8EB13;
+    font-size: 1rem;
+}
+
 .titreQT {
     font-family: Eczar, sans-serif;
     color: black;
