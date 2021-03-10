@@ -412,3 +412,20 @@ footer > .container > div:nth-of-type(3) a {
     font-weight: normal;
     font-family: Garamond, sans-serif;
 }
+
+#apropos > .container > div:nth-of-type(2) h3 {
+    font-family: Eczar, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #26001B;
+    -webkit-text-stroke: 1px #FFF711;
+    margin: 0;
+    padding: 0;
+}
+
+#apropos > .container > div:nth-of-type(3) p {
+    font-family: Open, sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: white;
+}

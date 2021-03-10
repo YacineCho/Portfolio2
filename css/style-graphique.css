@@ -2138,7 +2138,7 @@ fill: #FFF711;
 #campuscarBody > .personaCarteExperience > .container {
     display: grid;
     grid-template-columns: 8% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 8%;
-    grid-template-rows: 25px 2px 25px 20px 10px 200px 10px 20px 10px 490px 10px 20px 10px 400px 10px 20px 10px 20px 10px 490px 25px;
+    grid-template-rows: 0 2px 1.36% 0.10% 1.36% 1.08% 0.54% 10.88% 0.54% 1.08% 0.54% 26.67% 0.54% 1.08% 0.54% 21.77% 0.54% 1.08% 0.54% 1.08% 0.54% 26.67% 1.36%;
 }
 
 #campuscarBody > .personaCarteExperience > .container>div:first-of-type {
@@ -2240,7 +2240,7 @@ fill: #FFF711;
 #campuscarBody > .presentationMoodboard > .container {
     display: grid;
     grid-template-columns: 8% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 8%;
-    grid-template-rows: 2px 25px 20px 10px 150px 200px;
+    grid-template-rows: 2px 0.49% 6.14% 4.91% 2.45% 36.85% 49.14%;
 }
 
 #campuscarBody > .presentationMoodboard > .container >div:first-of-type {
@@ -2273,7 +2273,7 @@ fill: #FFF711;
 #campuscarBody > .presentationUserflow > .container {
     display: grid;
     grid-template-columns: 8% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 8%;
-    grid-template-rows: 2px 25px 20px 10px 200px 200px;
+    grid-template-rows: 2px 0.49% 6.14% 4.91% 2.45% 36.85% 49.14%;
 }
 
 #campuscarBody > .presentationUserflow > .container >div:first-of-type {
@@ -2306,8 +2306,76 @@ fill: #FFF711;
 #campuscarBody > .presentationWireframe > .container {
     display: grid;
     grid-template-columns: 8% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 4.2% 8%;
-    grid-template-rows: 2px 25px 20px 10px 150px 200px;
+    grid-template-rows: 2px 0.49% 6.14% 4.91% 2.45% 36.85% 49.14%;
 }
+
+button:hover{
+    cursor: pointer;
+}
+
+footer>.container a:nth-of-type(1){
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+footer > .container a:nth-of-type(2) {
+    grid-column-start: 5;
+    grid-row-start: 4;
+
+}
+
+footer > .container a:nth-of-type(3) {
+    grid-column-start: 6;
+    grid-row-start: 4;
+
+}
+
+footer > .container>div:last-of-type>a img{
+    height: 100%;
+}
+
+footer > .container > div:last-of-type {
+    grid-row-start: 5;
+    grid-column-start: 2;
+    text-align: center;
+    height: 100%;
+    grid-column-end: 8;
+    transform: rotate(180deg);
+}
+
+footer>.container>a>div svg{
+    width: 100%;
+    height: 100%;
+}
+
+footer>.container>a div{
+    height: 100%;
+}
+
+#indigluBody>footer>.container>a>div>svg>g path{
+     fill: #493323;
+ }
+
+#indigluBody>footer>.container>a:nth-of-type(2)>div>svg path{
+    fill: #493323;
+}
+
+#indigluBody>footer>.container>a:nth-of-type(3)>div>svg path{
+    fill: #493323;
+}
+
+#QTBody>footer>.container>a>div>svg>g path{
+    fill: #F8EB13;
+}
+
+#QTBody>footer>.container>a:nth-of-type(2)>div>svg path{
+    fill: #F8EB13;
+}
+
+#QTBody>footer>.container>a:nth-of-type(3)>div>svg path{
+    fill: #F8EB13;
+}
+
 
 #campuscarBody > .presentationWireframe > .container >div:first-of-type {
     background: rgba(112,112,112,29%);
@@ -2542,6 +2610,32 @@ fill: #FFF711;
 #campuscarBody > .maquette > .container div:nth-of-type(5) img {
     width: 100%;
     border: solid #055C8C 0.2rem;
+}
+
+#apropos > .container {
+    grid-template-columns: 100px auto 100px;
+    display: grid;
+    grid-template-rows: 2px 100px 220px 50px;
+}
+
+#apropos > .container > div:first-of-type {
+    background-color: #FF005C;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: 3;
+}
+
+#apropos > .container > div:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+#apropos > .container > div:nth-of-type(3) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
 }
 
 /*animation Accueil*/
