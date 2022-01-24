@@ -1,0 +1,1816 @@
+:root{
+    --bg: #FAFAFA;
+    --blue: #055C8C;
+    --yellow: #FECB49;
+    --shadow: rgba(0,0,0,.25);
+
+    --clipboard-1: #26baa4;
+    --clipboard-2: #6173ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.stop-scrolling {
+
+    height: 100%;
+    
+    overflow: hidden;
+    
+}
+
+
+body{
+    background: var(--bg);
+    .hero{
+        height: max-content;
+
+        overflow: hidden;
+
+
+        .main-navigation{
+            background: var(--blue);
+            position: fixed;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2rem 5% 2rem 5%;
+            font-family: 'Roboto', sans-serif;
+            z-index: 999;
+            box-shadow: 0 5px 15px var(--shadow);
+
+            .main-navigation__home{
+                text-decoration: none;
+            }
+
+            .main-navigation__links{
+                display: none;
+
+                .main-navigation__link{
+                    opacity: .75;
+                    transition: opacity .3s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .main-navigation__mobile-btn{
+                cursor: pointer;
+               
+                .main-navigation__mobile-btn__top{
+                    display: block;
+                    width: 2rem;
+                    height: .25rem;
+                    border-radius: 10px;
+                    background: var(--bg);
+                    margin-bottom: .25rem;
+                    transform-origin: center center;
+                    transition: transform .3s;
+                }
+
+                .main-navigation__mobile-btn__bottom{
+                    display: block;
+                    width: 1.5rem;
+                    height: .25rem;
+                    border-radius: 10px;
+                    background: var(--bg);
+                    transform-origin: center center;
+                    transition: transform .3s;
+                }
+            }
+
+            .active-menu{
+                margin-top: .75rem;
+              
+                .main-navigation__mobile-btn__bottom{
+                    transform: rotate(45deg);
+                    
+                    width: 2rem;
+                }
+
+                .main-navigation__mobile-btn__top{
+                    transform: rotate(135deg);
+                  
+                      margin-bottom: -.25rem;
+                }
+                padding-left: 2rem;
+                
+            }
+
+            .active-links{
+                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                gap: 2rem;
+                background: black;
+                width: 50vw;
+                padding-bottom: 25%;
+                .main-navigation__link{
+                    text-align: center;
+                    font-size: 2rem;
+                    a{
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+        }
+
+        .campuscar{
+            background: var(--blue);
+
+            .main-navigation__home{
+                background: var(--blue);
+            }
+            .active-links{
+                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                gap: 2rem;
+                background: var(--blue);
+                width: 50vw;
+                padding-bottom: 25%;
+                .main-navigation__link{
+                    text-align: center;
+                    font-size: 2rem;
+                    a{
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+
+            .active-menu{
+                background: var(--blue);
+                z-index: 999;
+               
+            }
+        }
+
+        .indiglu{
+            background: #493323;
+
+            .main-navigation__home{
+                background: #493323;
+            }
+            .active-links{
+                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                gap: 2rem;
+                background: #493323;
+                width: 50vw;
+                padding-bottom: 25%;
+                .main-navigation__link{
+                    text-align: center;
+                    font-size: 2rem;
+                    a{
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+
+            .active-menu{
+                background: #493323;
+                z-index: 999;
+            }
+        }
+
+        .camping{
+            background: #236969;
+
+            .main-navigation__home{
+                background: #236969;
+            }
+            .active-links{
+                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                gap: 2rem;
+                background: #236969;
+                width: 50vw;
+                padding-bottom: 25%;
+                .main-navigation__link{
+                    text-align: center;
+                    font-size: 2rem;
+                    a{
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+
+            .active-menu{
+                background: #236969;
+                z-index: 999;
+            }
+        }
+
+        .clipboard{
+            background: var(--clipboard-2);
+
+            .main-navigation__home{
+                background: var(--clipboard-2);
+            }
+            .active-links{
+                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                gap: 2rem;
+                background: var(--clipboard-2);
+                width: 50vw;
+                padding-bottom: 25%;
+                .main-navigation__link{
+                    text-align: center;
+                    font-size: 2rem;
+                    a{
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+
+            .active-menu{
+                background: var(--clipboard-2);
+                z-index: 999;
+            }
+        }
+        
+        .indiglu{
+            background: #493323;
+        }
+
+        .camping{
+            background: #236969;
+        }
+
+        .clipboard{
+            background: var(--clipboard-2);
+        }
+
+     
+
+        .hero__content{
+            display: flex;
+            flex-direction: column;
+            
+            .hero__content__left-col{
+                width: 100vw;
+                height: 50vh;
+                overflow: hidden;
+                background: var(--bg);
+
+                .hero__content__left-col__infinite-img1{
+                    overflow: hidden;
+                    height: max-content;
+                    white-space: nowrap;
+                  
+                    width: 150%;
+                    transform: rotate(25deg);
+                    gap: 1rem;
+                    
+                    display: flex;
+                    flex-direction: row;
+                    transform-origin: top right;
+                    .hero__content__left-col__infinite-img1__marquee{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        align-items: start;  
+                        width: auto;
+
+                        .hero__content__left-col__infinite-img1__marquee__img
+                        {
+                            margin: 1rem;
+                            img{
+                                width: 100%;
+                                border-radius: 10px;
+                                box-shadow: 0 0 15px var(--shadow);
+                            }
+                        }
+                       
+                    }
+                    
+                    .marquee1{
+                        animation: marqueeImg 20s linear infinite;
+                    }
+
+                    .marquee2{
+                        animation: marqueeImg 20s linear infinite reverse;
+                    }
+                }
+            
+                    @keyframes marqueeImg {
+                        0% {
+                          transform: translate3d(0, 0, 0);
+                        }
+                        100% {
+                          transform: translate3d(0, -50%, 0);
+                        }
+                    }
+                
+            }
+
+            .hero__content__right-col{
+                background: var(--blue);
+
+                .hero__content__right-col__infinite-text{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 900;
+                    font-size: 3rem;
+                    width: max-content;
+                    white-space: nowrap;
+                    max-width: 100%;
+                    overflow: hidden;
+                    padding-top: 1.5rem;
+        
+                    .hero__content__right-col__infinite-text__marquee{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        display: inline-block;
+                        animation: marquee 30s linear infinite;
+        
+                        p{
+                            display: inline-block;
+                            color: var(--yellow);
+                            
+                        }
+                    }
+            
+                    @keyframes marquee {
+                        0% {
+                          transform: translate3d(-50%, 0, 0);
+                        }
+                        100% {
+                          transform: translate3d(0, 0, 0);
+                        }
+                    }
+                }
+
+                .hero__content__right-col__sujet{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    gap: .5rem;
+                    .hero__content__right-col__sujet__title{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                        color: var(--bg);
+                    }
+
+                    .hero__content__right-col__sujet__text{
+                        font-family: 'Roboto', sans-serif;
+                        color: var(--bg);
+                    }
+                }
+
+                .hero__content__right-col__description{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    gap: .5rem;
+                    .hero__content__right-col__description__title{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                        color: var(--bg);
+                    }
+
+                    .hero__content__right-col__description__text{
+                        font-family: 'Roboto', sans-serif;
+                        color: var(--bg);
+                    }
+                }
+
+                .hero__content__right-col__role-duration{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    gap: .5rem;
+
+                    .hero__content__right-col__role-duration__title{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                        color: var(--bg);
+                    }
+
+                    .hero__content__right-col__role-duration__container{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: baseline;
+                        gap: 2rem;
+                        .hero__content__right-col__role-duration__role{
+                            font-family: 'Roboto', sans-serif;
+                            color: var(--bg);
+                            flex: 1;
+
+                            .hero__content__right-col__role-duration__role__text{
+                                width: max-content;
+                            }
+                            hr{
+                                opacity: .5;
+                                margin: .5rem 0;
+                            }
+                        }
+
+                        .hero__content__right-col__role-duration__duration{
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            .hero__content__right-col__role-duration__duration__content{
+                                display: flex;
+                                flex-direction: row;
+                                gap: .5rem;
+                                align-items: center;
+
+                                i{
+                                    font-size: 1.5rem;
+                                }
+
+                                p{
+                                    font-family: 'Roboto', sans-serif;
+                                }
+                            }
+
+                            hr{
+                                opacity: .5;
+                                margin: .5rem 0;
+                            }
+                        }
+                    }
+                }
+
+                .hero__content__right-col__outils{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    gap: .5rem;
+                    .hero__content__right-col__outils__title{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                        color: var(--bg);  
+                    }
+
+                    .hero__content__right-col__outils__text{
+                        font-family: 'Roboto', sans-serif;
+                        color: var(--bg);
+                    }
+                }
+            }
+
+            .indiglu{
+                background:#493323;
+
+                .hero__content__right-col__infinite-text{
+                    .hero__content__right-col__infinite-text__marquee{
+                        p{
+                            color: #FCFBF5;
+                        }
+                    }
+                }
+            }
+
+            .camping{
+                background:#236969;
+
+                .hero__content__right-col__infinite-text{
+                    .hero__content__right-col__infinite-text__marquee{
+                        p{
+                            color: #FCFBF5;
+                        }
+                    }
+                }
+            }
+
+            .clipboard{
+                background:var(--clipboard-2);
+
+                .hero__content__right-col__infinite-text{
+                    .hero__content__right-col__infinite-text__marquee{
+                        p{
+                            color: #FCFBF5;
+                        }
+                    }
+                }
+            }
+        }
+
+      
+       
+    }
+
+    main{
+        .main__left-col{
+            padding: 1rem;
+
+            .main__left-col__recherches{
+                display: flex;
+                flex-direction: column;
+                gap: .25rem;
+
+                .main__left-col__recherches__title{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 900;
+                    color: var(--blue);
+                }
+
+                .main__left-col__recherches__text{
+                    font-family: 'Roboto', sans-serif;
+                    color: black;
+                }
+
+                hr{
+                    color: var(--blue);
+                    opacity: .5;
+                    width: 50%;
+                    margin: 1rem 0;
+                }
+            }
+
+            .main__left-col__description-couleur{
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+            
+                .main__left-col__description-couleur__description{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .25rem;
+                    flex: 1;
+                    justify-content: space-between;
+                    .main__left-col__description-couleur__description__title{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                        color: var(--blue);
+                    }
+
+                    .main__left-col__description-couleur__description__text{
+                        font-family: 'Roboto', sans-serif;
+                        color: black;
+                    }
+
+                    hr{
+                        color: var(--blue);
+                        opacity: .5;
+                        width: 100%;
+                        margin: 1rem 0;
+                    }
+                }
+
+                .main__left-col__description-couleur__couleur{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    flex: 1;
+                    width: 100%;
+                    justify-content: space-between;
+                    .main__left-col__description-couleur__couleur__title{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                        color: var(--blue);
+
+                    }
+                    
+                    .main__left-col__description-couleur__couleur__color1{
+                        display: flex;
+                        flex-direction: row;
+                        gap: .5rem;
+                        align-items: center;
+                        .main__left-col__description-couleur__couleur__color1__primary{
+                            width: 50px;
+                            height: 50px;
+                            background: var(--blue);
+                        }
+
+                        .main__left-col__description-couleur__couleur__color1__hex{
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 900;
+                            color: var(--blue);
+                        }
+                    }
+
+                    .main__left-col__description-couleur__couleur__color2{
+                        display: flex;
+                        flex-direction: row;
+                        gap: .5rem;
+                        align-items: center;
+                        .main__left-col__description-couleur__couleur__color2__secondary{
+                            width: 50px;
+                            height: 50px;
+                            background: var(--yellow);
+                        }
+
+                        .main__left-col__description-couleur__couleur__color2__hex{
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 900;
+                            color: var(--yellow);
+                        }
+                    }
+
+                    hr{
+                        color: var(--blue);
+                        opacity: .5;
+                        width: 100%;
+                        margin: 1rem 0;
+                    }
+                }
+            }
+
+            .main__left-col__logo-police{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .main__left-col__logo-police__logo{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .25rem;
+                    flex: 1;
+                    .main__left-col__logo-police__logo__title{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                        color: var(--blue);
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1rem;
+                        width: max-content;
+                        
+                    }
+                    
+                    .main__left-col__logo-police__logo__text{
+                        font-family: 'Roboto', sans-serif;
+                        color: black;
+                    }
+                    hr{
+                        color: var(--blue);
+                        opacity: .5;
+                        width: 100%;
+                        margin: 1rem 0 0 0;
+                    }
+                }
+
+                .main__left-col__logo-police__logo__police{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .25rem;
+                    flex: 1;
+                    justify-content: space-evenly;
+                    padding-bottom: 1rem;
+                    .main__left-col__logo-police__logo__police__title{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                        color: var(--blue);
+                        
+                    }
+                    .main__left-col__logo-police__logo__police__police1{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: .5rem;
+
+                        .main__left-col__logo-police__logo__police__police1__primary{
+                            width: 50px;
+                            height: 50px;
+                            background: var(--blue);
+
+                            &:after{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                content: "A";
+                                color: var(--bg);
+                                height: 100%;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: bold;
+                            }
+                        }
+                        .main__left-col__logo-police__logo__police__police1__value{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            .main__left-col__logo-police__logo__police__police1__value__text{
+                                font-family: 'Roboto', sans-serif;
+                                color: black;
+                            }
+                            .main__left-col__logo-police__logo__police__police1__value__showoff{
+                                font-family: 'Roboto', sans-serif;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    .main__left-col__logo-police__logo__police__police2{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: .5rem;
+                        .main__left-col__logo-police__logo__police__police2__secondary{ 
+                            width: 50px;
+                            height: 50px;
+                            background: var(--blue);
+
+                            &:after{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                content: "A";
+                                color: var(--bg);
+                                height: 100%;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: bold;
+                            }
+                        }
+                        .main__left-col__logo-police__logo__police__police2__value{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            .main__left-col__logo-police__logo__police__police2__value__text{
+                                font-family: 'Montserrat', sans-serif;
+                                color: black;
+                            }
+                            .main__left-col__logo-police__logo__police__police2__value__showoff{
+                                font-family: 'Montserrat', sans-serif;
+                                color: black;
+                            }
+                        } 
+                    }
+                }
+            }
+
+            .main__left-col__design-maquette{
+                display: flex;
+                flex-direction: row;
+                margin-top: 1rem;
+                .main__left-col__design-maquette__design{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    .main__left-col__design-maquette__design__title{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                        color: var(--blue);
+                    }
+                    .main__left-col__design-maquette__design__text{
+                        font-family: 'Roboto', sans-serif;
+                        color: black;
+                    }
+                    hr{
+                        color: var(--blue);
+                        opacity: .5;
+                        width: 100%;
+                        margin: 1rem 0;
+                    }
+                }
+
+                .main__left-col__design-maquette__btn{
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    transition: transform .3s;
+                    &:hover{
+                        transform: rotate(360deg);
+                    }
+                    background-image: url('../assets/btn/arrow-campuscar.svg');
+                    background-repeat: no-repeat;
+                    background-size: 25%;
+                    background-position: 50% 50%;
+                    img{
+                        width: 10rem;
+                    }
+                }
+            }
+        }
+
+        .main__right-col{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 90%;
+                padding: 2rem 0;
+            }
+        }
+    }
+
+    .indiglu{
+        .main__left-col{
+            .main__left-col__recherches{
+                .main__left-col__recherches__title{
+                    color: #493323;
+                }
+
+                hr{
+                    color: #493323;
+                }
+            }
+            
+            .main__left-col__description-couleur{
+                .main__left-col__description-couleur__description{
+                    .main__left-col__description-couleur__description__title{
+                        color: #493323;
+                    }
+
+                    hr{
+                        color: #493323;
+                    }
+                }
+
+                .main__left-col__description-couleur__couleur{
+                    .main__left-col__description-couleur__couleur__title{
+                        color: #493323;
+                    }
+
+                    .main__left-col__description-couleur__couleur__color1{
+                        .main__left-col__description-couleur__couleur__color1__primary{
+                            background: #493323;
+                        }
+                        .main__left-col__description-couleur__couleur__color1__hex{
+                            color: #493323;
+                        }
+                    }
+
+                    .main__left-col__description-couleur__couleur__color2{
+                        .main__left-col__description-couleur__couleur__color2__secondary{
+                            background: #EAAC7F;
+                        }
+                        .main__left-col__description-couleur__couleur__color2__hex{
+                            color: #EAAC7F;
+                        }
+
+                    }
+
+                    hr{
+                        color: #493323;
+                    }
+                }
+            }
+
+            .main__left-col__logo-police{
+                .main__left-col__logo-police__logo{
+                    .main__left-col__logo-police__logo__title{
+                        color: #493323;
+
+                        img{
+                            width: 5rem;
+                        }
+                    }
+
+                    hr{
+                        color: #493323;
+                    }
+                }
+
+                .main__left-col__logo-police__logo__police{
+                    justify-content: space-between;
+                    .main__left-col__logo-police__logo__police__title{
+                        color: #493323;
+                    }
+
+                    .main__left-col__logo-police__logo__police__police1{
+                        .main__left-col__logo-police__logo__police__police1__primary{
+                            background: #493323;
+                        }
+                    }
+
+                    .main__left-col__logo-police__logo__police__police2{
+                        .main__left-col__logo-police__logo__police__police2__secondary{
+                            background: #493323;
+                        }
+                    }
+                }
+            }
+
+            .main__left-col__design-maquette{
+                .main__left-col__design-maquette__design{
+                    .main__left-col__design-maquette__design__title{
+                        color: #493323;
+                    }
+                }
+
+                .main__left-col__design-maquette__btn{
+                    background-image: url('../assets/btn/arrow-indiglu.svg');
+                    img{
+                        width: 10rem;
+                    }
+                }
+            }
+        }
+     
+        .main__right-col{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .camping{
+        .main__left-col{
+            .main__left-col__recherches{
+                .main__left-col__recherches__title{
+                    color: #236969;
+                }
+
+                hr{
+                    color: #236969;
+                }
+            }
+            
+            .main__left-col__description-couleur{
+                .main__left-col__description-couleur__description{
+                    .main__left-col__description-couleur__description__title{
+                        color: #236969;
+                       
+                    }
+
+                    hr{
+                        color: #236969;
+                    }
+                }
+
+                .main__left-col__description-couleur__couleur{
+                    .main__left-col__description-couleur__couleur__title{
+                        color: #236969;
+                        width: max-content;
+                    }
+
+                    .main__left-col__description-couleur__couleur__color1{
+                        .main__left-col__description-couleur__couleur__color1__primary{
+                            background: #236969;
+                        }
+                        .main__left-col__description-couleur__couleur__color1__hex{
+                            color: #236969;
+                        }
+                    }
+
+                    .main__left-col__description-couleur__couleur__color2{
+                        .main__left-col__description-couleur__couleur__color2__secondary{
+                            background: #EAAC7F;
+                        }
+                        .main__left-col__description-couleur__couleur__color2__hex{
+                            color: #EAAC7F;
+                        }
+
+                    }
+
+                    hr{
+                        color: #236969;
+                    }
+                }
+            }
+
+            .main__left-col__logo-police{
+                .main__left-col__logo-police__logo{
+                    .main__left-col__logo-police__logo__title{
+                        color: #236969;
+
+                        img{
+                            width: 5rem;
+                        }
+                    }
+
+                    hr{
+                        color: #236969;
+                    }
+                }
+
+                .main__left-col__logo-police__logo__police{
+                    justify-content: space-between;
+                    .main__left-col__logo-police__logo__police__title{
+                        color: #236969;
+                    }
+
+                    .main__left-col__logo-police__logo__police__police1{
+                        .main__left-col__logo-police__logo__police__police1__primary{
+                            background: #236969;
+                        }
+                    }
+
+                    .main__left-col__logo-police__logo__police__police2{
+                        .main__left-col__logo-police__logo__police__police2__secondary{
+                            background: #236969;
+                        }
+                    }
+                }
+            }
+
+            .main__left-col__design-maquette{
+                .main__left-col__design-maquette__design{
+                    .main__left-col__design-maquette__design__title{
+                        color: #236969;
+                    }
+                }
+
+                .main__left-col__design-maquette__btn{
+                    background-image: url('../assets/btn/arrow-camping.svg');
+                    img{
+                        width: 10rem;
+                    }
+                }
+            }
+        }
+     
+        .main__right-col{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .clipboard{
+        .main__left-col{
+            .main__left-col__recherches{
+                .main__left-col__recherches__title{
+                    color: var(--clipboard-2);
+                }
+
+                hr{
+                    color: var(--clipboard-2);
+                }
+            }
+            
+            .main__left-col__description-couleur{
+                .main__left-col__description-couleur__description{
+                    .main__left-col__description-couleur__description__title{
+                        color: var(--clipboard-2);
+                       
+                    }
+
+                    hr{
+                        color: var(--clipboard-2);
+                    }
+                }
+
+                .main__left-col__description-couleur__couleur{
+                    .main__left-col__description-couleur__couleur__title{
+                        color: var(--clipboard-2);
+                        width: max-content;
+                    }
+
+                    .main__left-col__description-couleur__couleur__color1{
+                        .main__left-col__description-couleur__couleur__color1__primary{
+                            background: var(--clipboard-2);
+                        }
+                        .main__left-col__description-couleur__couleur__color1__hex{
+                            color: var(--clipboard-2);
+                        }
+                    }
+
+                    .main__left-col__description-couleur__couleur__color2{
+                        .main__left-col__description-couleur__couleur__color2__secondary{
+                            background: var(--clipboard-1);
+                        }
+                        .main__left-col__description-couleur__couleur__color2__hex{
+                            color: var(--clipboard-1);
+                        }
+
+                    }
+
+                    hr{
+                        color: var(--clipboard-2);
+                    }
+                }
+            }
+
+            .main__left-col__logo-police{
+                .main__left-col__logo-police__logo{
+                    .main__left-col__logo-police__logo__title{
+                        color: var(--clipboard-2);
+
+                        img{
+                            width: 5rem;
+                        }
+                    }
+
+                    hr{
+                        color: var(--clipboard-2);
+                    }
+                }
+
+                .main__left-col__logo-police__logo__police{
+                    justify-content: space-evenly;
+                    padding-bottom: 0;
+                    .main__left-col__logo-police__logo__police__title{
+                        color: var(--clipboard-2);
+                    }
+
+                    .main__left-col__logo-police__logo__police__police1{
+                        .main__left-col__logo-police__logo__police__police1__primary{
+                            background: var(--clipboard-2);
+                        }
+                    }
+
+                    .main__left-col__logo-police__logo__police__police2{
+                        .main__left-col__logo-police__logo__police__police2__secondary{
+                            background: var(--clipboard-2);
+                        }
+                    }
+                }
+            }
+
+            .main__left-col__design-maquette{
+                .main__left-col__design-maquette__design{
+                    width: max-content;
+                    .main__left-col__design-maquette__design__title{
+                        color: var(--clipboard-2);
+                    }
+                }
+                
+                .main__left-col__design-maquette__btn{
+                    background-image: url('../assets/btn/arrow-clipboard.svg');
+                    img{
+                        width: 10rem;
+                    }
+                }
+            }
+        }
+     
+        .main__right-col{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    footer{
+        background: var(--blue);
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        .footer__left-col{
+           display: flex;
+           justify-content: center;
+            .footer__left-col__contact{
+                img{
+                    width: 6rem;
+                    background-image: url('../assets/btn/arrow.svg');
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-size: 50%;
+                    transition: transform .3s;
+                    &:hover{
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+
+        .footer__right-col{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            .footer__right-col__navigation{
+                text-align: center;
+                .footer__right-col__navigation__title{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    font-size: 1.25rem;
+                }
+    
+                .footer__right-col__navigation__link{
+                    a{
+                        font-family: 'Roboto', sans-serif;
+                        font-weight:normal;
+                        text-decoration: none;
+                        opacity: .75;
+                        transition: opacity .3s;
+
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .footer__right-col__btn{
+                
+                img{
+                    width: 6rem;
+                    background: url('../assets/btn/arrow.svg');
+                    background-repeat: no-repeat;
+                    background-size: 50%;
+                    background-position: 50% 50%;
+                    transition: transform .3s;
+                    &:hover{
+                        transform: rotate(360deg);
+                    }
+                }
+                
+            }
+            
+        }
+    }
+
+    .indiglu-footer{
+        background: #493323;
+        
+        
+    }
+
+    .camping-footer{
+        background: #236969;
+    
+    }
+
+    .clipboard-footer{
+        background: var(--clipboard-2);
+    }
+}
+
+
+@media screen and (min-width: 1080px){
+
+    body{
+        
+        .hero{
+
+            .main-navigation{
+                font-size: 1rem;
+                width: 100%;
+                padding: 2rem 4rem;
+                .main-navigation__links{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 4rem;
+
+                    .main-navigation__link{
+                        a{
+                            text-decoration: none;
+                        }
+                       
+                    }
+                }
+
+                .main-navigation__mobile-btn{
+                    display: none;
+                }
+    
+            }
+
+            .hero__content{
+                flex-direction: row-reverse;
+                padding-top: 5.2rem;
+                .hero__content__left-col{
+                    width: 50%;
+                    height: 100vh;
+                    overflow: hidden;
+                    
+
+                    .hero__content__left-col__infinite-img1{
+                        overflow: hidden;
+                        height: max-content;
+                        white-space: nowrap;
+                      
+                            width: 150%;
+                            transform: rotate(25deg);
+                            gap: 1rem;
+                        
+                        display: flex;
+                        flex-direction: row;
+                        transform-origin: top right;
+                        .hero__content__left-col__infinite-img1__marquee{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                            animation: marqueeImg 9s linear infinite;
+                            width: auto;
+                            align-items: start;
+
+                            .hero__content__left-col__infinite-img1__marquee__img{
+                                margin: 1rem;
+                                img{
+                                    width: 100%;
+                                    border-radius: 10px;
+                                    box-shadow: 0 0 15px var(--shadow);
+                                }
+                            }
+                           
+                        }
+
+                        .marquee1{
+                            animation: marqueeImg 20s linear infinite;
+                        }
+    
+                        .marquee2{
+                            animation: marqueeImg 20s linear infinite reverse;
+                        }
+                
+                    }
+                
+                        @keyframes marqueeImg {
+                            0% {
+                              transform: translate3d(0, 0, 0);
+                            }
+                            100% {
+                              transform: translate3d(0, -50%, 0);
+                            }
+                        }
+                    
+                }
+
+                .hero__content__right-col{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    .hero__content__right-col__sujet{
+                        padding: 0 4rem;
+                        max-width: 75%;
+                    }
+
+                    .hero__content__right-col__description{
+                        padding: 0 4rem;
+                        max-width: 75%;
+                    }
+
+                    .hero__content__right-col__role-duration{
+                        padding: 0 4rem;
+                        max-width: 75%;
+                    }
+
+                    .hero__content__right-col__outils{
+                        padding: 0 4rem 3rem 4rem;
+                        max-width: 75%;
+                    }
+                }
+            }
+        }
+
+        main{
+            display: flex;
+            flex-direction: row;
+            padding: 2rem 0;
+
+            .main__left-col{
+                padding: 1rem;
+                max-width: 50%;
+                padding-left: 15%;
+
+                .main__left-col__design-maquette{
+                    .main__left-col__design-maquette__btn{
+                        img{
+                            width: 9rem;
+                        }
+                    }
+                }
+
+                .main__left-col__logo-police{
+                    flex-direction: row;
+                }
+            }
+
+            .main__right-col{
+                img {
+                    width: 60%;
+                    padding: 2rem 0;
+                    padding-right: 15%;
+                }
+            }
+        }
+
+        footer{
+            justify-content: center;
+            padding: 5rem;
+            gap: 20rem;
+            flex-direction: row;
+            align-items: center;
+
+            .footer__left-col{
+                .footer__left-col__title {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    width: 10%;
+                    font-size: 1.5rem;
+                }
+
+                .footer__left-col__input{
+                    font-size: 1rem;
+                }
+
+                .footer__left-col__contact{
+                    img{
+                        width: 10rem;
+                    }
+                }
+            }
+
+            .footer__right-col{
+                gap: 20rem;
+                width: auto;
+                flex-direction: row;
+                .footer__right-col__navigation{
+                    .footer__right-col__navigation__title{
+                        font-size: 1.5rem;
+                        width: max-content;
+                    }
+
+                    .footer__right-col__navigation__link{
+                        font-size: 1rem;
+                    }
+                }
+
+                .footer__right-col__btn{
+                    width: 10rem;
+
+                    img{
+                        width: 10rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1440px){
+
+    body,
+    .indiglu,
+    .campuscar,
+    .camping,
+    .clipboard{
+        
+        .hero{
+
+            .main-navigation{
+                font-size: 1.5rem;
+                width: 100%;
+                padding: 2rem 4rem;
+                .main-navigation__links{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 4rem;
+
+                    .main-navigation__link{
+                        a{
+                            text-decoration: none;
+                        }
+                       
+                    }
+                }
+
+                .main-navigation__mobile-btn{
+                    display: none;
+                }
+    
+            }
+
+            .hero__content{
+                flex-direction: row-reverse;
+                padding-top: 5.2rem;
+                .hero__content__left-col{
+                    width: 50%;
+                    height: 100vh;
+                    overflow: hidden;
+                    
+
+                    .hero__content__left-col__infinite-img1{
+                        overflow: hidden;
+                        height: max-content;
+                        white-space: nowrap;
+                      
+                            width: 150%;
+                            transform: rotate(25deg);
+                            gap: 1rem;
+                        
+                        display: flex;
+                        flex-direction: row;
+                        transform-origin: top right;
+                        .hero__content__left-col__infinite-img1__marquee{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                            animation: marqueeImg 9s linear infinite;
+                            width: auto;
+                            align-items: start;
+
+                            .hero__content__left-col__infinite-img1__marquee__img{
+                                margin: 1rem;
+                                img{
+                                    width: 100%;
+                                    border-radius: 10px;
+                                    box-shadow: 0 0 15px var(--shadow);
+                                }
+                            }
+                           
+                        }
+
+                        .marquee1{
+                            animation: marqueeImg 9s linear infinite;
+                        }
+    
+                        .marquee2{
+                            animation: marqueeImg 9s linear infinite reverse;
+                        }
+                
+                    }
+                
+                        @keyframes marqueeImg {
+                            0% {
+                              transform: translate3d(0, 0, 0);
+                            }
+                            100% {
+                              transform: translate3d(0, -50%, 0);
+                            }
+                        }
+                    
+                }
+
+                .hero__content__right-col{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    .hero__content__right-col__infinite-text{
+                        font-size: 5rem;
+                    }
+
+                    .hero__content__right-col__sujet{
+                        padding: 0 4rem;
+                        max-width: 75%;
+
+                        .hero__content__right-col__sujet__title{
+                            font-size: 2rem;
+                        }
+
+                        .hero__content__right-col__sujet__text{
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .hero__content__right-col__description{
+                        padding: 0 4rem;
+                        max-width: 75%;
+
+                        .hero__content__right-col__description__title{
+                            font-size: 2rem;
+                        }
+
+                        .hero__content__right-col__description__text{
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .hero__content__right-col__role-duration{
+                        padding: 0 4rem;
+                        max-width: 75%;
+                        .hero__content__right-col__role-duration__title{
+                            font-size: 2rem;
+                        }
+                        .hero__content__right-col__role-duration__container{
+                            .hero__content__right-col__role-duration__role{
+                                .hero__content__right-col__role-duration__role__title{
+                                    font-size: 2rem;
+                                }
+                                .hero__content__right-col__role-duration__role__text{
+                                    font-size: 1.5rem;
+                                }
+                            }
+    
+                            .hero__content__right-col__role-duration__duration{
+                                .hero__content__right-col__role-duration__duration__content{
+                                    i{
+                                        font-size: 2rem;
+                                    }
+                                    .hero__content__right-col__role-duration__duration__text{
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                               
+                            }
+                        }
+                        
+                    }
+
+                    .hero__content__right-col__outils{
+                        padding: 0 4rem 3rem 4rem;
+                        max-width: 75%;
+
+                        .hero__content__right-col__outils__title{
+                            font-size: 2rem;
+                        }
+
+                        .hero__content__right-col__outils__text{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        main{
+            display: flex;
+            flex-direction: row;
+            padding: 2rem 0;
+
+            .main__left-col{
+                padding: 1rem;
+                max-width: 50%;
+                padding-left: 15%;
+
+                .main__left-col__recherches{
+                    .main__left-col__recherches__title{
+                        font-size: 2rem;
+                    }
+
+                    .main__left-col__recherches__text{
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .main__left-col__description-couleur{
+                    .main__left-col__description-couleur__description{
+                        .main__left-col__description-couleur__description__title{
+                            font-size: 2rem;
+                        }
+                        .main__left-col__description-couleur__description__text{
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .main__left-col__description-couleur__couleur{
+                        .main__left-col__description-couleur__couleur__title{
+                            font-size: 2rem;
+                        }
+                        .main__left-col__description-couleur__couleur__color1{
+                            .main__left-col__description-couleur__couleur__color1__hex{
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        .main__left-col__description-couleur__couleur__color2{
+                            .main__left-col__description-couleur__couleur__color2__hex{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+                
+                .main__left-col__logo-police{
+                    .main__left-col__logo-police__logo{
+                        .main__left-col__logo-police__logo__title{
+                            font-size: 2rem;
+                            img{
+                                width: 4rem;
+                            }
+                        }
+                        .main__left-col__logo-police__logo__text{
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .main__left-col__logo-police__logo__police{
+                        .main__left-col__logo-police__logo__police__title{
+                            font-size: 2rem;
+                        }
+                        .main__left-col__logo-police__logo__police__police1{
+                            .main__left-col__logo-police__logo__police__police1__primary{
+                                font-size: 2rem;
+                            }
+                            .main__left-col__logo-police__logo__police__police1__value{
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .main__left-col__logo-police__logo__police__police2{
+                            .main__left-col__logo-police__logo__police__police2__secondary{
+                                font-size: 2rem;
+                            }
+                            .main__left-col__logo-police__logo__police__police2__value{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+
+                .main__left-col__design-maquette{
+                    .main__left-col__design-maquette__design{
+                        .main__left-col__design-maquette__design__title{
+                            font-size: 2rem;
+                        }
+                        .main__left-col__design-maquette__design__text{
+                            font-size: 1.5rem;
+                        }
+                    }
+                    
+                    .main__left-col__design-maquette__btn{
+                        img{
+                            width: 15rem;
+                        }
+                    }
+                }
+
+                .main__left-col__logo-police{
+                    flex-direction: row;
+                }
+            }
+
+            .main__right-col{
+                img {
+                    width: 100%;
+                    padding: 2rem 0;
+                    padding-right: 15%;
+                }
+            }
+        }
+
+        footer{
+            justify-content: center;
+            padding: 5rem;
+            gap: 20rem;
+            flex-direction: row;
+            align-items: center;
+
+            .footer__left-col{
+                .footer__left-col__title {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    width: 10%;
+                    font-size: 1.5rem;
+                }
+
+                .footer__left-col__input{
+                    font-size: 1rem;
+                }
+                .footer__left-col__contact{
+                    img{
+                        width: 10rem;
+                    }
+                }
+            }
+
+            .footer__right-col{
+                gap: 20rem;
+                width: auto;
+                flex-direction: row;
+                .footer__right-col__navigation{
+                    .footer__right-col__navigation__title{
+                        font-size: 1.5rem;
+                        width: max-content;
+                    }
+
+                    .footer__right-col__navigation__link{
+                        font-size: 1rem;
+                    }
+                }
+
+                .footer__right-col__btn{
+                    width: 10rem;
+
+                    img{
+                        width: 10rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .campuscar{
+        main{
+            display: flex;
+            flex-direction: row;
+            padding: 2rem 0;
+
+            .main__right-col{
+                img {
+                    width: 60%;
+                    padding: 2rem 0;
+                    padding-right: 15%;
+                }
+            }
+        }
+    }
+}

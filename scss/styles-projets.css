@@ -1,0 +1,2289 @@
+:root {
+  --bg: #FAFAFA;
+  --blue: #055C8C;
+  --yellow: #FECB49;
+  --shadow: rgba(0,0,0,.25);
+  --clipboard-1: #26baa4;
+  --clipboard-2: #6173ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg);
+}
+
+body .hero {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: hidden;
+}
+
+body .hero .main-navigation {
+  background: var(--blue);
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 5% 2rem 5%;
+  font-family: 'Roboto', sans-serif;
+  z-index: 999;
+  -webkit-box-shadow: 0 5px 15px var(--shadow);
+          box-shadow: 0 5px 15px var(--shadow);
+}
+
+body .hero .main-navigation .main-navigation__home {
+  text-decoration: none;
+}
+
+body .hero .main-navigation .main-navigation__links {
+  display: none;
+}
+
+body .hero .main-navigation .main-navigation__links .main-navigation__link {
+  opacity: .75;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+body .hero .main-navigation .main-navigation__links .main-navigation__link:hover {
+  opacity: 1;
+}
+
+body .hero .main-navigation .main-navigation__mobile-btn {
+  cursor: pointer;
+}
+
+body .hero .main-navigation .main-navigation__mobile-btn .main-navigation__mobile-btn__top {
+  display: block;
+  width: 2rem;
+  height: .25rem;
+  border-radius: 10px;
+  background: var(--bg);
+  margin-bottom: .25rem;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+body .hero .main-navigation .main-navigation__mobile-btn .main-navigation__mobile-btn__bottom {
+  display: block;
+  width: 1.5rem;
+  height: .25rem;
+  border-radius: 10px;
+  background: var(--bg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+body .hero .main-navigation .active-menu {
+  margin-top: .75rem;
+  padding-left: 2rem;
+}
+
+body .hero .main-navigation .active-menu .main-navigation__mobile-btn__bottom {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 2rem;
+}
+
+body .hero .main-navigation .active-menu .main-navigation__mobile-btn__top {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-bottom: -.25rem;
+}
+
+body .hero .main-navigation .active-links {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  gap: 2rem;
+  background: black;
+  width: 50vw;
+  padding-bottom: 25%;
+}
+
+body .hero .main-navigation .active-links .main-navigation__link {
+  text-align: center;
+  font-size: 2rem;
+}
+
+body .hero .main-navigation .active-links .main-navigation__link a {
+  text-decoration: none;
+}
+
+body .hero .campuscar {
+  background: var(--blue);
+}
+
+body .hero .campuscar .main-navigation__home {
+  background: var(--blue);
+}
+
+body .hero .campuscar .active-links {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  gap: 2rem;
+  background: var(--blue);
+  width: 50vw;
+  padding-bottom: 25%;
+}
+
+body .hero .campuscar .active-links .main-navigation__link {
+  text-align: center;
+  font-size: 2rem;
+}
+
+body .hero .campuscar .active-links .main-navigation__link a {
+  text-decoration: none;
+}
+
+body .hero .campuscar .active-menu {
+  background: var(--blue);
+  z-index: 999;
+}
+
+body .hero .indiglu {
+  background: #493323;
+}
+
+body .hero .indiglu .main-navigation__home {
+  background: #493323;
+}
+
+body .hero .indiglu .active-links {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  gap: 2rem;
+  background: #493323;
+  width: 50vw;
+  padding-bottom: 25%;
+}
+
+body .hero .indiglu .active-links .main-navigation__link {
+  text-align: center;
+  font-size: 2rem;
+}
+
+body .hero .indiglu .active-links .main-navigation__link a {
+  text-decoration: none;
+}
+
+body .hero .indiglu .active-menu {
+  background: #493323;
+  z-index: 999;
+}
+
+body .hero .camping {
+  background: #236969;
+}
+
+body .hero .camping .main-navigation__home {
+  background: #236969;
+}
+
+body .hero .camping .active-links {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  gap: 2rem;
+  background: #236969;
+  width: 50vw;
+  padding-bottom: 25%;
+}
+
+body .hero .camping .active-links .main-navigation__link {
+  text-align: center;
+  font-size: 2rem;
+}
+
+body .hero .camping .active-links .main-navigation__link a {
+  text-decoration: none;
+}
+
+body .hero .camping .active-menu {
+  background: #236969;
+  z-index: 999;
+}
+
+body .hero .clipboard {
+  background: var(--clipboard-2);
+}
+
+body .hero .clipboard .main-navigation__home {
+  background: var(--clipboard-2);
+}
+
+body .hero .clipboard .active-links {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  gap: 2rem;
+  background: var(--clipboard-2);
+  width: 50vw;
+  padding-bottom: 25%;
+}
+
+body .hero .clipboard .active-links .main-navigation__link {
+  text-align: center;
+  font-size: 2rem;
+}
+
+body .hero .clipboard .active-links .main-navigation__link a {
+  text-decoration: none;
+}
+
+body .hero .clipboard .active-menu {
+  background: var(--clipboard-2);
+  z-index: 999;
+}
+
+body .hero .indiglu {
+  background: #493323;
+}
+
+body .hero .camping {
+  background: #236969;
+}
+
+body .hero .clipboard {
+  background: var(--clipboard-2);
+}
+
+body .hero .hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .hero .hero__content .hero__content__left-col {
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 {
+  overflow: hidden;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  white-space: nowrap;
+  width: 150%;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: auto;
+}
+
+body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img {
+  margin: 1rem;
+}
+
+body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 15px var(--shadow);
+          box-shadow: 0 0 15px var(--shadow);
+}
+
+body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee1 {
+  -webkit-animation: marqueeImg 20s linear infinite;
+          animation: marqueeImg 20s linear infinite;
+}
+
+body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee2 {
+  animation: marqueeImg 20s linear infinite reverse;
+}
+
+@-webkit-keyframes marqueeImg {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+}
+
+@keyframes marqueeImg {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+}
+
+body .hero .hero__content .hero__content__right-col {
+  background: var(--blue);
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__infinite-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  padding-top: 1.5rem;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__infinite-text .hero__content__right-col__infinite-text__marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-animation: marquee 30s linear infinite;
+          animation: marquee 30s linear infinite;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__infinite-text .hero__content__right-col__infinite-text__marquee p {
+  display: inline-block;
+  color: var(--yellow);
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: .5rem;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--bg);
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__text {
+  font-family: 'Roboto', sans-serif;
+  color: var(--bg);
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: .5rem;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--bg);
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__text {
+  font-family: 'Roboto', sans-serif;
+  color: var(--bg);
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: .5rem;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--bg);
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 2rem;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role {
+  font-family: 'Roboto', sans-serif;
+  color: var(--bg);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role .hero__content__right-col__role-duration__role__text {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role hr {
+  opacity: .5;
+  margin: .5rem 0;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content i {
+  font-size: 1.5rem;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content p {
+  font-family: 'Roboto', sans-serif;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration hr {
+  opacity: .5;
+  margin: .5rem 0;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__outils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: .5rem;
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--bg);
+}
+
+body .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__text {
+  font-family: 'Roboto', sans-serif;
+  color: var(--bg);
+}
+
+body .hero .hero__content .indiglu {
+  background: #493323;
+}
+
+body .hero .hero__content .indiglu .hero__content__right-col__infinite-text .hero__content__right-col__infinite-text__marquee p {
+  color: #FCFBF5;
+}
+
+body .hero .hero__content .camping {
+  background: #236969;
+}
+
+body .hero .hero__content .camping .hero__content__right-col__infinite-text .hero__content__right-col__infinite-text__marquee p {
+  color: #FCFBF5;
+}
+
+body .hero .hero__content .clipboard {
+  background: var(--clipboard-2);
+}
+
+body .hero .hero__content .clipboard .hero__content__right-col__infinite-text .hero__content__right-col__infinite-text__marquee p {
+  color: #FCFBF5;
+}
+
+body main .main__left-col {
+  padding: 1rem;
+}
+
+body main .main__left-col .main__left-col__recherches {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .25rem;
+}
+
+body main .main__left-col .main__left-col__recherches .main__left-col__recherches__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--blue);
+}
+
+body main .main__left-col .main__left-col__recherches .main__left-col__recherches__text {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+body main .main__left-col .main__left-col__recherches hr {
+  color: var(--blue);
+  opacity: .5;
+  width: 50%;
+  margin: 1rem 0;
+}
+
+body main .main__left-col .main__left-col__description-couleur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .25rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--blue);
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__text {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description hr {
+  color: var(--blue);
+  opacity: .5;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--blue);
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__primary {
+  width: 50px;
+  height: 50px;
+  background: var(--blue);
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__hex {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--blue);
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__secondary {
+  width: 50px;
+  height: 50px;
+  background: var(--yellow);
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__hex {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--yellow);
+}
+
+body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur hr {
+  color: var(--blue);
+  opacity: .5;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+body main .main__left-col .main__left-col__logo-police {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .25rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__text {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo hr {
+  color: var(--blue);
+  opacity: .5;
+  width: 100%;
+  margin: 1rem 0 0 0;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .25rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--blue);
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__primary {
+  width: 50px;
+  height: 50px;
+  background: var(--blue);
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__primary:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: "A";
+  color: var(--bg);
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__value .main__left-col__logo-police__logo__police__police1__value__text {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__value .main__left-col__logo-police__logo__police__police1__value__showoff {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__secondary {
+  width: 50px;
+  height: 50px;
+  background: var(--blue);
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__secondary:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: "A";
+  color: var(--bg);
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__value .main__left-col__logo-police__logo__police__police2__value__text {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__value .main__left-col__logo-police__logo__police__police2__value__showoff {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+body main .main__left-col .main__left-col__design-maquette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1rem;
+}
+
+body main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+body main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--blue);
+}
+
+body main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__text {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+body main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design hr {
+  color: var(--blue);
+  opacity: .5;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+body main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  background-image: url("../assets/btn/arrow-campuscar.svg");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 50% 50%;
+}
+
+body main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+body main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn img {
+  width: 10rem;
+}
+
+body main .main__right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .main__right-col img {
+  width: 90%;
+  padding: 2rem 0;
+}
+
+body .indiglu .main__left-col .main__left-col__recherches .main__left-col__recherches__title {
+  color: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__recherches hr {
+  color: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__title {
+  color: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description hr {
+  color: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__title {
+  color: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__primary {
+  background: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__hex {
+  color: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__secondary {
+  background: #EAAC7F;
+}
+
+body .indiglu .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__hex {
+  color: #EAAC7F;
+}
+
+body .indiglu .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur hr {
+  color: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title {
+  color: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title img {
+  width: 5rem;
+}
+
+body .indiglu .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo hr {
+  color: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .indiglu .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__title {
+  color: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__primary {
+  background: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__secondary {
+  background: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__title {
+  color: #493323;
+}
+
+body .indiglu .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn {
+  background-image: url("../assets/btn/arrow-indiglu.svg");
+}
+
+body .indiglu .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn img {
+  width: 10rem;
+}
+
+body .indiglu .main__right-col img {
+  width: 100%;
+}
+
+body .camping .main__left-col .main__left-col__recherches .main__left-col__recherches__title {
+  color: #236969;
+}
+
+body .camping .main__left-col .main__left-col__recherches hr {
+  color: #236969;
+}
+
+body .camping .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__title {
+  color: #236969;
+}
+
+body .camping .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description hr {
+  color: #236969;
+}
+
+body .camping .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__title {
+  color: #236969;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+body .camping .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__primary {
+  background: #236969;
+}
+
+body .camping .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__hex {
+  color: #236969;
+}
+
+body .camping .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__secondary {
+  background: #EAAC7F;
+}
+
+body .camping .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__hex {
+  color: #EAAC7F;
+}
+
+body .camping .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur hr {
+  color: #236969;
+}
+
+body .camping .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title {
+  color: #236969;
+}
+
+body .camping .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title img {
+  width: 5rem;
+}
+
+body .camping .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo hr {
+  color: #236969;
+}
+
+body .camping .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .camping .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__title {
+  color: #236969;
+}
+
+body .camping .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__primary {
+  background: #236969;
+}
+
+body .camping .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__secondary {
+  background: #236969;
+}
+
+body .camping .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__title {
+  color: #236969;
+}
+
+body .camping .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn {
+  background-image: url("../assets/btn/arrow-camping.svg");
+}
+
+body .camping .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn img {
+  width: 10rem;
+}
+
+body .camping .main__right-col img {
+  width: 100%;
+}
+
+body .clipboard .main__left-col .main__left-col__recherches .main__left-col__recherches__title {
+  color: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__recherches hr {
+  color: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__title {
+  color: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description hr {
+  color: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__title {
+  color: var(--clipboard-2);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+body .clipboard .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__primary {
+  background: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__hex {
+  color: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__secondary {
+  background: var(--clipboard-1);
+}
+
+body .clipboard .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__hex {
+  color: var(--clipboard-1);
+}
+
+body .clipboard .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur hr {
+  color: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title {
+  color: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title img {
+  width: 5rem;
+}
+
+body .clipboard .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo hr {
+  color: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 0;
+}
+
+body .clipboard .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__title {
+  color: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__primary {
+  background: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__secondary {
+  background: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+body .clipboard .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__title {
+  color: var(--clipboard-2);
+}
+
+body .clipboard .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn {
+  background-image: url("../assets/btn/arrow-clipboard.svg");
+}
+
+body .clipboard .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn img {
+  width: 10rem;
+}
+
+body .clipboard .main__right-col img {
+  width: 100%;
+}
+
+body footer {
+  background: var(--blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+body footer .footer__left-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .footer__left-col .footer__left-col__contact img {
+  width: 6rem;
+  background-image: url("../assets/btn/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50%;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+body footer .footer__left-col .footer__left-col__contact img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+body footer .footer__right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+
+body footer .footer__right-col .footer__right-col__navigation {
+  text-align: center;
+}
+
+body footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+body footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__link a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  opacity: .75;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+body footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__link a:hover {
+  opacity: 1;
+}
+
+body footer .footer__right-col .footer__right-col__btn img {
+  width: 6rem;
+  background: url("../assets/btn/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50% 50%;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+body footer .footer__right-col .footer__right-col__btn img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+body .indiglu-footer {
+  background: #493323;
+}
+
+body .camping-footer {
+  background: #236969;
+}
+
+body .clipboard-footer {
+  background: var(--clipboard-2);
+}
+
+@media screen and (min-width: 1080px) {
+  body .hero .main-navigation {
+    font-size: 1rem;
+    width: 100%;
+    padding: 2rem 4rem;
+  }
+  body .hero .main-navigation .main-navigation__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 4rem;
+  }
+  body .hero .main-navigation .main-navigation__links .main-navigation__link a {
+    text-decoration: none;
+  }
+  body .hero .main-navigation .main-navigation__mobile-btn {
+    display: none;
+  }
+  body .hero .hero__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-top: 5.2rem;
+  }
+  body .hero .hero__content .hero__content__left-col {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 {
+    overflow: hidden;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    white-space: nowrap;
+    width: 150%;
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+    gap: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    -webkit-animation: marqueeImg 9s linear infinite;
+            animation: marqueeImg 9s linear infinite;
+    width: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img {
+    margin: 1rem;
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img img {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px var(--shadow);
+            box-shadow: 0 0 15px var(--shadow);
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee1 {
+    -webkit-animation: marqueeImg 20s linear infinite;
+            animation: marqueeImg 20s linear infinite;
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee2 {
+    animation: marqueeImg 20s linear infinite reverse;
+  }
+  @-webkit-keyframes marqueeImg {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, -50%, 0);
+              transform: translate3d(0, -50%, 0);
+    }
+  }
+  @keyframes marqueeImg {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, -50%, 0);
+              transform: translate3d(0, -50%, 0);
+    }
+  }
+  body .hero .hero__content .hero__content__right-col {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet {
+    padding: 0 4rem;
+    max-width: 75%;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__description {
+    padding: 0 4rem;
+    max-width: 75%;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration {
+    padding: 0 4rem;
+    max-width: 75%;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__outils {
+    padding: 0 4rem 3rem 4rem;
+    max-width: 75%;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 2rem 0;
+  }
+  body main .main__left-col {
+    padding: 1rem;
+    max-width: 50%;
+    padding-left: 15%;
+  }
+  body main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn img {
+    width: 9rem;
+  }
+  body main .main__left-col .main__left-col__logo-police {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main .main__right-col img {
+    width: 60%;
+    padding: 2rem 0;
+    padding-right: 15%;
+  }
+  body footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5rem;
+    gap: 20rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body footer .footer__left-col .footer__left-col__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 10%;
+    font-size: 1.5rem;
+  }
+  body footer .footer__left-col .footer__left-col__input {
+    font-size: 1rem;
+  }
+  body footer .footer__left-col .footer__left-col__contact img {
+    width: 10rem;
+  }
+  body footer .footer__right-col {
+    gap: 20rem;
+    width: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__title {
+    font-size: 1.5rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  body footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__link {
+    font-size: 1rem;
+  }
+  body footer .footer__right-col .footer__right-col__btn {
+    width: 10rem;
+  }
+  body footer .footer__right-col .footer__right-col__btn img {
+    width: 10rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body .hero .main-navigation,
+  .indiglu .hero .main-navigation,
+  .campuscar .hero .main-navigation,
+  .camping .hero .main-navigation,
+  .clipboard .hero .main-navigation {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 2rem 4rem;
+  }
+  body .hero .main-navigation .main-navigation__links,
+  .indiglu .hero .main-navigation .main-navigation__links,
+  .campuscar .hero .main-navigation .main-navigation__links,
+  .camping .hero .main-navigation .main-navigation__links,
+  .clipboard .hero .main-navigation .main-navigation__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 4rem;
+  }
+  body .hero .main-navigation .main-navigation__links .main-navigation__link a,
+  .indiglu .hero .main-navigation .main-navigation__links .main-navigation__link a,
+  .campuscar .hero .main-navigation .main-navigation__links .main-navigation__link a,
+  .camping .hero .main-navigation .main-navigation__links .main-navigation__link a,
+  .clipboard .hero .main-navigation .main-navigation__links .main-navigation__link a {
+    text-decoration: none;
+  }
+  body .hero .main-navigation .main-navigation__mobile-btn,
+  .indiglu .hero .main-navigation .main-navigation__mobile-btn,
+  .campuscar .hero .main-navigation .main-navigation__mobile-btn,
+  .camping .hero .main-navigation .main-navigation__mobile-btn,
+  .clipboard .hero .main-navigation .main-navigation__mobile-btn {
+    display: none;
+  }
+  body .hero .hero__content,
+  .indiglu .hero .hero__content,
+  .campuscar .hero .hero__content,
+  .camping .hero .hero__content,
+  .clipboard .hero .hero__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-top: 5.2rem;
+  }
+  body .hero .hero__content .hero__content__left-col,
+  .indiglu .hero .hero__content .hero__content__left-col,
+  .campuscar .hero .hero__content .hero__content__left-col,
+  .camping .hero .hero__content .hero__content__left-col,
+  .clipboard .hero .hero__content .hero__content__left-col {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1,
+  .indiglu .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1,
+  .campuscar .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1,
+  .camping .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1,
+  .clipboard .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 {
+    overflow: hidden;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    white-space: nowrap;
+    width: 150%;
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+    gap: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee,
+  .indiglu .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee,
+  .campuscar .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee,
+  .camping .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee,
+  .clipboard .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    -webkit-animation: marqueeImg 9s linear infinite;
+            animation: marqueeImg 9s linear infinite;
+    width: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img,
+  .indiglu .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img,
+  .campuscar .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img,
+  .camping .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img,
+  .clipboard .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img {
+    margin: 1rem;
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img img,
+  .indiglu .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img img,
+  .campuscar .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img img,
+  .camping .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img img,
+  .clipboard .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .hero__content__left-col__infinite-img1__marquee .hero__content__left-col__infinite-img1__marquee__img img {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px var(--shadow);
+            box-shadow: 0 0 15px var(--shadow);
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee1,
+  .indiglu .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee1,
+  .campuscar .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee1,
+  .camping .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee1,
+  .clipboard .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee1 {
+    -webkit-animation: marqueeImg 9s linear infinite;
+            animation: marqueeImg 9s linear infinite;
+  }
+  body .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee2,
+  .indiglu .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee2,
+  .campuscar .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee2,
+  .camping .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee2,
+  .clipboard .hero .hero__content .hero__content__left-col .hero__content__left-col__infinite-img1 .marquee2 {
+    animation: marqueeImg 9s linear infinite reverse;
+  }
+  @-webkit-keyframes marqueeImg {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, -50%, 0);
+              transform: translate3d(0, -50%, 0);
+    }
+  }
+  @keyframes marqueeImg {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, -50%, 0);
+              transform: translate3d(0, -50%, 0);
+    }
+  }
+  body .hero .hero__content .hero__content__right-col,
+  .indiglu .hero .hero__content .hero__content__right-col,
+  .campuscar .hero .hero__content .hero__content__right-col,
+  .camping .hero .hero__content .hero__content__right-col,
+  .clipboard .hero .hero__content .hero__content__right-col {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__infinite-text,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__infinite-text,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__infinite-text,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__infinite-text,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__infinite-text {
+    font-size: 5rem;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet {
+    padding: 0 4rem;
+    max-width: 75%;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__title,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__title,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__title,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__title,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__title {
+    font-size: 2rem;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__text,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__text,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__text,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__text,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__sujet .hero__content__right-col__sujet__text {
+    font-size: 1.5rem;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__description,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__description,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__description,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__description,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__description {
+    padding: 0 4rem;
+    max-width: 75%;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__title,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__title,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__title,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__title,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__title {
+    font-size: 2rem;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__text,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__text,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__text,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__text,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__description .hero__content__right-col__description__text {
+    font-size: 1.5rem;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration {
+    padding: 0 4rem;
+    max-width: 75%;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__title,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__title,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__title,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__title,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__title {
+    font-size: 2rem;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role .hero__content__right-col__role-duration__role__title,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role .hero__content__right-col__role-duration__role__title,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role .hero__content__right-col__role-duration__role__title,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role .hero__content__right-col__role-duration__role__title,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role .hero__content__right-col__role-duration__role__title {
+    font-size: 2rem;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role .hero__content__right-col__role-duration__role__text,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role .hero__content__right-col__role-duration__role__text,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role .hero__content__right-col__role-duration__role__text,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role .hero__content__right-col__role-duration__role__text,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__role .hero__content__right-col__role-duration__role__text {
+    font-size: 1.5rem;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content i,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content i,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content i,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content i,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content i {
+    font-size: 2rem;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content .hero__content__right-col__role-duration__duration__text,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content .hero__content__right-col__role-duration__duration__text,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content .hero__content__right-col__role-duration__duration__text,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content .hero__content__right-col__role-duration__duration__text,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__role-duration .hero__content__right-col__role-duration__container .hero__content__right-col__role-duration__duration .hero__content__right-col__role-duration__duration__content .hero__content__right-col__role-duration__duration__text {
+    font-size: 1.5rem;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__outils,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__outils,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__outils,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__outils,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__outils {
+    padding: 0 4rem 3rem 4rem;
+    max-width: 75%;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__title,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__title,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__title,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__title,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__title {
+    font-size: 2rem;
+  }
+  body .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__text,
+  .indiglu .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__text,
+  .campuscar .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__text,
+  .camping .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__text,
+  .clipboard .hero .hero__content .hero__content__right-col .hero__content__right-col__outils .hero__content__right-col__outils__text {
+    font-size: 1.5rem;
+  }
+  body main,
+  .indiglu main,
+  .campuscar main,
+  .camping main,
+  .clipboard main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 2rem 0;
+  }
+  body main .main__left-col,
+  .indiglu main .main__left-col,
+  .campuscar main .main__left-col,
+  .camping main .main__left-col,
+  .clipboard main .main__left-col {
+    padding: 1rem;
+    max-width: 50%;
+    padding-left: 15%;
+  }
+  body main .main__left-col .main__left-col__recherches .main__left-col__recherches__title,
+  .indiglu main .main__left-col .main__left-col__recherches .main__left-col__recherches__title,
+  .campuscar main .main__left-col .main__left-col__recherches .main__left-col__recherches__title,
+  .camping main .main__left-col .main__left-col__recherches .main__left-col__recherches__title,
+  .clipboard main .main__left-col .main__left-col__recherches .main__left-col__recherches__title {
+    font-size: 2rem;
+  }
+  body main .main__left-col .main__left-col__recherches .main__left-col__recherches__text,
+  .indiglu main .main__left-col .main__left-col__recherches .main__left-col__recherches__text,
+  .campuscar main .main__left-col .main__left-col__recherches .main__left-col__recherches__text,
+  .camping main .main__left-col .main__left-col__recherches .main__left-col__recherches__text,
+  .clipboard main .main__left-col .main__left-col__recherches .main__left-col__recherches__text {
+    font-size: 1.5rem;
+  }
+  body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__title,
+  .indiglu main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__title,
+  .campuscar main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__title,
+  .camping main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__title,
+  .clipboard main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__title {
+    font-size: 2rem;
+  }
+  body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__text,
+  .indiglu main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__text,
+  .campuscar main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__text,
+  .camping main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__text,
+  .clipboard main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__description .main__left-col__description-couleur__description__text {
+    font-size: 1.5rem;
+  }
+  body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__title,
+  .indiglu main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__title,
+  .campuscar main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__title,
+  .camping main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__title,
+  .clipboard main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__title {
+    font-size: 2rem;
+  }
+  body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__hex,
+  .indiglu main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__hex,
+  .campuscar main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__hex,
+  .camping main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__hex,
+  .clipboard main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color1 .main__left-col__description-couleur__couleur__color1__hex {
+    font-size: 1.5rem;
+  }
+  body main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__hex,
+  .indiglu main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__hex,
+  .campuscar main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__hex,
+  .camping main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__hex,
+  .clipboard main .main__left-col .main__left-col__description-couleur .main__left-col__description-couleur__couleur .main__left-col__description-couleur__couleur__color2 .main__left-col__description-couleur__couleur__color2__hex {
+    font-size: 1.5rem;
+  }
+  body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title,
+  .indiglu main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title,
+  .campuscar main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title,
+  .camping main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title,
+  .clipboard main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title {
+    font-size: 2rem;
+  }
+  body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title img,
+  .indiglu main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title img,
+  .campuscar main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title img,
+  .camping main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title img,
+  .clipboard main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__title img {
+    width: 4rem;
+  }
+  body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__text,
+  .indiglu main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__text,
+  .campuscar main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__text,
+  .camping main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__text,
+  .clipboard main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo .main__left-col__logo-police__logo__text {
+    font-size: 1.5rem;
+  }
+  body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__title,
+  .indiglu main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__title,
+  .campuscar main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__title,
+  .camping main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__title,
+  .clipboard main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__title {
+    font-size: 2rem;
+  }
+  body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__primary,
+  .indiglu main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__primary,
+  .campuscar main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__primary,
+  .camping main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__primary,
+  .clipboard main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__primary {
+    font-size: 2rem;
+  }
+  body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__value,
+  .indiglu main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__value,
+  .campuscar main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__value,
+  .camping main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__value,
+  .clipboard main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police1 .main__left-col__logo-police__logo__police__police1__value {
+    font-size: 1.5rem;
+  }
+  body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__secondary,
+  .indiglu main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__secondary,
+  .campuscar main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__secondary,
+  .camping main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__secondary,
+  .clipboard main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__secondary {
+    font-size: 2rem;
+  }
+  body main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__value,
+  .indiglu main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__value,
+  .campuscar main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__value,
+  .camping main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__value,
+  .clipboard main .main__left-col .main__left-col__logo-police .main__left-col__logo-police__logo__police .main__left-col__logo-police__logo__police__police2 .main__left-col__logo-police__logo__police__police2__value {
+    font-size: 1.5rem;
+  }
+  body main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__title,
+  .indiglu main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__title,
+  .campuscar main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__title,
+  .camping main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__title,
+  .clipboard main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__title {
+    font-size: 2rem;
+  }
+  body main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__text,
+  .indiglu main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__text,
+  .campuscar main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__text,
+  .camping main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__text,
+  .clipboard main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__design .main__left-col__design-maquette__design__text {
+    font-size: 1.5rem;
+  }
+  body main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn img,
+  .indiglu main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn img,
+  .campuscar main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn img,
+  .camping main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn img,
+  .clipboard main .main__left-col .main__left-col__design-maquette .main__left-col__design-maquette__btn img {
+    width: 15rem;
+  }
+  body main .main__left-col .main__left-col__logo-police,
+  .indiglu main .main__left-col .main__left-col__logo-police,
+  .campuscar main .main__left-col .main__left-col__logo-police,
+  .camping main .main__left-col .main__left-col__logo-police,
+  .clipboard main .main__left-col .main__left-col__logo-police {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main .main__right-col img,
+  .indiglu main .main__right-col img,
+  .campuscar main .main__right-col img,
+  .camping main .main__right-col img,
+  .clipboard main .main__right-col img {
+    width: 100%;
+    padding: 2rem 0;
+    padding-right: 15%;
+  }
+  body footer,
+  .indiglu footer,
+  .campuscar footer,
+  .camping footer,
+  .clipboard footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5rem;
+    gap: 20rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body footer .footer__left-col .footer__left-col__title,
+  .indiglu footer .footer__left-col .footer__left-col__title,
+  .campuscar footer .footer__left-col .footer__left-col__title,
+  .camping footer .footer__left-col .footer__left-col__title,
+  .clipboard footer .footer__left-col .footer__left-col__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 10%;
+    font-size: 1.5rem;
+  }
+  body footer .footer__left-col .footer__left-col__input,
+  .indiglu footer .footer__left-col .footer__left-col__input,
+  .campuscar footer .footer__left-col .footer__left-col__input,
+  .camping footer .footer__left-col .footer__left-col__input,
+  .clipboard footer .footer__left-col .footer__left-col__input {
+    font-size: 1rem;
+  }
+  body footer .footer__left-col .footer__left-col__contact img,
+  .indiglu footer .footer__left-col .footer__left-col__contact img,
+  .campuscar footer .footer__left-col .footer__left-col__contact img,
+  .camping footer .footer__left-col .footer__left-col__contact img,
+  .clipboard footer .footer__left-col .footer__left-col__contact img {
+    width: 10rem;
+  }
+  body footer .footer__right-col,
+  .indiglu footer .footer__right-col,
+  .campuscar footer .footer__right-col,
+  .camping footer .footer__right-col,
+  .clipboard footer .footer__right-col {
+    gap: 20rem;
+    width: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__title,
+  .indiglu footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__title,
+  .campuscar footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__title,
+  .camping footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__title,
+  .clipboard footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__title {
+    font-size: 1.5rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  body footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__link,
+  .indiglu footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__link,
+  .campuscar footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__link,
+  .camping footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__link,
+  .clipboard footer .footer__right-col .footer__right-col__navigation .footer__right-col__navigation__link {
+    font-size: 1rem;
+  }
+  body footer .footer__right-col .footer__right-col__btn,
+  .indiglu footer .footer__right-col .footer__right-col__btn,
+  .campuscar footer .footer__right-col .footer__right-col__btn,
+  .camping footer .footer__right-col .footer__right-col__btn,
+  .clipboard footer .footer__right-col .footer__right-col__btn {
+    width: 10rem;
+  }
+  body footer .footer__right-col .footer__right-col__btn img,
+  .indiglu footer .footer__right-col .footer__right-col__btn img,
+  .campuscar footer .footer__right-col .footer__right-col__btn img,
+  .camping footer .footer__right-col .footer__right-col__btn img,
+  .clipboard footer .footer__right-col .footer__right-col__btn img {
+    width: 10rem;
+  }
+  .campuscar main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 2rem 0;
+  }
+  .campuscar main .main__right-col img {
+    width: 60%;
+    padding: 2rem 0;
+    padding-right: 15%;
+  }
+}
+/*# sourceMappingURL=styles-projets.css.map */
